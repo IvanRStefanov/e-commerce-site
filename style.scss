@@ -584,7 +584,7 @@ h6 {
     font-weight: 600;
     transition: color, background-color, border-color;
     transition-duration: 0.3s;
-    
+
     &:hover {
         color: #fff;
         background-color: #B88E2F;
@@ -611,8 +611,12 @@ h6 {
 .section-grid {
     background-color: #FCF8F3;
     padding: 44px 0;
-    display: flex;
-    gap: 30px;
+    overflow: hidden;
+
+    .section__inner {
+        display: flex;
+        gap: 30px;
+    }
 
     .section__main {
         flex-basis: 422px;
@@ -623,5 +627,35 @@ h6 {
 
     .section__entry {
         text-align: left;
+    }
+
+    .section__media {
+        max-width: calc(774px + 102px);
+        flex-grow: 0;
+        flex-shrink: 1;
+        margin-right: -102px;
+    }
+}
+
+/* ------------------------------------------------------------ *\
+    Card-slider-gallery
+\* ------------------------------------------------------------ */
+
+.card-slider-gallery {
+    position: relative;
+    width: 404px;
+    aspect-ratio: 404 / 582;
+
+    .card__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .card__content {
+        position: relative;
+        z-index: 2;
     }
 }
