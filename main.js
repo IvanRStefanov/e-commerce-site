@@ -5,7 +5,8 @@ $(document).ready(function () {
 
        new Swiper(slider, {
         autoplay: false,
-        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 24,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -14,7 +15,8 @@ $(document).ready(function () {
         navigation: {
             nextEl: '.slider__next',
             prevEl: '.slider__prev',
-        }
+        },
+        centeredSlides: true,
        })
     });
 });
