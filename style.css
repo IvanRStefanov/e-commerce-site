@@ -516,16 +516,16 @@ h6 {
 /* ------------------------------------------------------------ *\
     Secetion-grid
 \* ------------------------------------------------------------ */
-.section-grid {
+.section-slider {
   background-color: #FCF8F3;
   padding: 44px 0;
   overflow: hidden;
 }
-.section-grid .section__inner {
+.section-slider .section__inner {
   display: flex;
   gap: 41px;
 }
-.section-grid .section__main {
+.section-slider .section__main {
   position: relative;
   z-index: 4;
   flex-basis: 422px;
@@ -538,17 +538,17 @@ h6 {
   justify-content: center;
   padding: 28px 0;
 }
-.section-grid .section__entry {
+.section-slider .section__entry {
   text-align: left;
   line-height: 1.5;
 }
-.section-grid .section__entry h2 + p {
+.section-slider .section__entry h2 + p {
   margin-top: 7px;
 }
-.section-grid .section__entry + .section__actions {
+.section-slider .section__entry + .section__actions {
   margin-top: 23px;
 }
-.section-grid .section__media {
+.section-slider .section__media {
   flex-grow: 0;
   flex-shrink: 1;
 }
