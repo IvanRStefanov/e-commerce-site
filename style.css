@@ -330,12 +330,16 @@ h6 {
 .section-products .section__items {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  margin: 0 -16px;
+  gap: 32px 0;
 }
 .section-products .section__item {
-  flex-basis: 285px;
-  flex-grow: 0;
-  flex-shrink: 0;
+  flex-basis: 25%;
+  padding: 0 16px;
+  width: 100%;
+  min-width: 230px;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 .section-products .section__actions {
   text-align: center;
@@ -1143,6 +1147,26 @@ h6 {
   background-color: #000;
   transition: transform, width;
   transition-duration: 0.3s;
+}
+
+/* ------------------------------------------------------------ *\
+    Section-listing
+\* ------------------------------------------------------------ */
+.section-listing .section__items {
+  padding: 63px 0 70px;
+}
+.section-listing .section__items > ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  gap: 40px 0;
+}
+.section-listing .section__items > ul > li {
+  flex-basis: 25%;
+  padding: 0 16px;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
