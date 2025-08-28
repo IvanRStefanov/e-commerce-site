@@ -129,6 +129,10 @@ h6 {
   justify-content: space-between;
   gap: 30px;
 }
+.menu > ul > li.current-menu-item a:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
 .menu a {
   text-decoration: none;
   color: #333333;
@@ -1040,6 +1044,105 @@ h6 {
 }
 .footer .footer__copyright {
   border-top: 1px solid #D9D9D9;
+}
+
+/* ------------------------------------------------------------ *\
+    Hero-inner-pages
+\* ------------------------------------------------------------ */
+.hero-inner-pages {
+  position: relative;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 55px 0 20px;
+}
+.hero-inner-pages .hero__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.hero-inner-pages .hero__bg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 50%;
+  z-index: 2;
+}
+.hero-inner-pages .hero__bg img {
+  filter: blur(0.1em);
+}
+.hero-inner-pages .hero__inner {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+.hero-inner-pages .hero__content {
+  text-align: center;
+}
+.hero-inner-pages .hero__header h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: #000;
+  font-weight: 500;
+}
+.hero-inner-pages .hero__header + .hero__breadcrumbs {
+  margin-top: 13px;
+}
+.hero-inner-pages .hero__breadcrumbs ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+.hero-inner-pages .hero__breadcrumbs li:not(:last-child) {
+  position: relative;
+  padding-right: 26px;
+}
+.hero-inner-pages .hero__breadcrumbs li:not(:last-child):after {
+  content: "";
+  position: absolute;
+  right: 9px;
+  bottom: 7px;
+  width: 9px;
+  aspect-ratio: 1;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(-45deg);
+}
+.hero-inner-pages .hero__breadcrumbs a {
+  text-decoration: none;
+  color: #000;
+}
+.hero-inner-pages .hero__breadcrumbs li:not(:last-child) a {
+  font-weight: 500;
+  position: relative;
+}
+.hero-inner-pages .hero__breadcrumbs li:not(:last-child) a:hover:after {
+  width: 100%;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.hero-inner-pages .hero__breadcrumbs li:not(:last-child) a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: transform, width;
+  transition-duration: 0.3s;
 }
 
 /*# sourceMappingURL=style.css.map */
