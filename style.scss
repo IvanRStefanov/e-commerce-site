@@ -1638,3 +1638,165 @@ h6 {
         letter-spacing: 0;
     }
 }
+
+/* ------------------------------------------------------------ *\
+    Section-contacts
+\* ------------------------------------------------------------ */
+
+.section-contacts {
+    padding: 105px 0;
+
+    .section__entry {
+        text-align: center;
+        color: #9F9F9F;
+        font-size: 16px;
+    }
+
+    .section__entry h2 {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.2;
+        color: #000;
+    }
+
+    .section__entry h2 + p {
+        margin-top: 15px;
+    }
+
+    .section__entry p + p {
+        margin-top: 4px;
+    }
+
+    .section__entry + .section__grid {
+        margin-top: 130px;
+    }
+
+    .section__grid {
+        max-width: 950px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        gap: 50px;
+        justify-content: space-between;
+    }
+
+    .section__aside {
+        max-width: 305px;
+        width: 100%;
+    }
+
+    .section__main {
+        max-width: 529px;
+        width: 100%;
+    }
+}
+
+/* ------------------------------------------------------------ *\
+    Contact-info
+\* ------------------------------------------------------------ */
+
+.contact-info {
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: flex;
+        gap: 30px
+    }
+
+    li + li {
+        margin-top: 42px;
+    }
+
+    .contact-info__content h4 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.2;
+
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+
+    address {
+        font-style: normal;
+    }
+
+    p + p {
+        margin-top: 5px;
+    }
+
+    a[href^="tel"],
+    a[href^="mailto"] {
+        text-decoration: none;
+        color: inherit
+    }
+}
+
+/* ------------------------------------------------------------ *\
+    Form-contacts
+\* ------------------------------------------------------------ */
+
+.form-contacts {
+
+    .form__row + .form__row {
+        margin-top: 36px;
+    }
+    
+    .form__label {
+        font-weight: 500;
+    }
+    
+    .field,
+    .textarea {
+        font-family: inherit;
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid #9F9F9F;
+        appearance: none;
+        padding: 0 29px;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.1em;
+    }
+
+    .textarea {
+        min-height: 120px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+        resize: none;
+    }
+
+    .field {
+        height: 75px;
+    }
+
+    .form__label + .form__controls {
+        margin-top: 25px;
+    }
+
+    .form__actions {
+        margin-top: 47px;
+    }
+
+    .form__btn {
+        font-family: $ff-sans-serif;
+        background-color: #B88E2F;
+        color: #fff;
+        border-radius: 5px;
+        display: inline-block;
+        width: 235px;
+        border: 1px solid #B88E2F;
+        min-height: 53px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color, color;
+        transition-duration: 0.3s;
+
+        &:hover {
+            background-color: #fff;
+            color: #B88E2F;
+        }
+    }
+}
