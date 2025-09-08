@@ -1354,6 +1354,7 @@ h6 {
 
 .section-listing {
     overflow: hidden;
+    padding: 0 0 85px 0;
 
     .section__bar {
         position: relative;
@@ -1415,7 +1416,7 @@ h6 {
     }
 
     .section__items {
-        padding: 63px 0 70px;
+        padding: 63px 0 74px;
     }
 
     .section__items>ul {
@@ -1431,6 +1432,7 @@ h6 {
         padding: 0 16px;
         flex-shrink: 1;
         flex-grow: 1;
+        max-width: 33.33%;
     }
 
     .section__paging {
@@ -1580,4 +1582,57 @@ h6 {
         display: none;
     }
 
+}
+
+/* ------------------------------------------------------------ *\
+    Outro
+\* ------------------------------------------------------------ */
+
+.outro {
+    background-color: #FAF3EA;
+    padding: 100px 0;
+
+    @media screen and (min-width: 1200px) {
+        .outro__shell {
+            padding: 0 53px;
+            max-width: calc(1334px + (2 * 53px));
+        }
+    }
+
+    .outro__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    .outro__item {
+        flex-shrink: 0;
+        flex-grow: 0;
+        display: flex;
+        gap: 0 10px;
+    }
+
+    .outro__item img {
+        display: block;
+        max-width: 60px;
+        width: 100%;
+        flex-shrink: 0;
+        flex-grow: 0;
+        height: auto;
+    }
+
+    .outro__title {
+        font-size: 25px;
+        line-height: 1.5;
+        font-weight: 600;
+        letter-spacing: 0;
+    }
+
+    .outro__subtitle {
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 500;
+        letter-spacing: 0;
+    }
 }
