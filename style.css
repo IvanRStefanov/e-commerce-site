@@ -1222,6 +1222,9 @@ h6 {
   flex-shrink: 1;
   flex-grow: 1;
 }
+.section-listing .section__paging {
+  text-align: center;
+}
 
 /* ------------------------------------------------------------ *\
     Filters
@@ -1292,6 +1295,58 @@ h6 {
   -moz-appearance: none;
 }
 .form-sorting .form__controls select:-ms-expand {
+  display: none;
+}
+
+/* ------------------------------------------------------------ *\
+    Paging
+\* ------------------------------------------------------------ */
+.paging {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+}
+.paging a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  line-height: 1.2;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f1e7;
+  padding: 15px 24px;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.paging a:hover {
+  background-color: #B88E2F;
+  color: #fff;
+}
+.paging ul {
+  list-style-type: none;
+  display: flex;
+  gap: 38px;
+}
+.paging li a {
+  width: 60px;
+  aspect-ratio: 1;
+}
+.paging li.paging__current-page a {
+  background-color: #B88E2F;
+  color: #fff;
+}
+.paging .paging__prev a,
+.paging .paging__next a {
+  min-height: 60px;
+  font-weight: 300;
+}
+.paging .paging__prev.disabled,
+.paging .paging__next.disabled {
+  pointer-events: none;
   display: none;
 }
 

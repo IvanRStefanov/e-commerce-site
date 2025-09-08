@@ -1418,7 +1418,7 @@ h6 {
         padding: 63px 0 70px;
     }
 
-    .section__items > ul {
+    .section__items>ul {
         list-style-type: none;
         display: flex;
         flex-wrap: wrap;
@@ -1433,6 +1433,9 @@ h6 {
         flex-grow: 1;
     }
 
+    .section__paging {
+        text-align: center;
+    }
 }
 
 /* ------------------------------------------------------------ *\
@@ -1516,4 +1519,65 @@ h6 {
             display: none;
         }
     }
+}
+
+/* ------------------------------------------------------------ *\
+    Paging
+\* ------------------------------------------------------------ */
+
+.paging {
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+
+    a {
+        text-decoration: none;
+        color: #000;
+        font-size: 20px;
+        line-height: 1.2;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f9f1e7;
+        padding: 15px 24px;
+        border-radius: 10px;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+            background-color: #B88E2F;
+            color: #fff;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 38px;
+    }
+
+    li a {
+        width: 60px;
+        aspect-ratio: 1;
+    }
+
+    li.paging__current-page a {
+        background-color: #B88E2F;
+        color: #fff;
+    }
+
+    .paging__prev a,
+    .paging__next a {
+        min-height: 60px;
+        font-weight: 300;
+    }
+
+    .paging__prev.disabled,
+    .paging__next.disabled {
+        pointer-events: none;
+        display: none;
+    }
+
 }
