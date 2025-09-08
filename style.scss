@@ -161,7 +161,7 @@ h6 {
         gap: 30px;
     }
 
-    > ul > li.current-menu-item a:after {
+    >ul>li.current-menu-item a:after {
         transform: scaleX(1);
         transform-origin: left;
     }
@@ -1353,9 +1353,71 @@ h6 {
 \* ------------------------------------------------------------ */
 
 .section-listing {
+    overflow: hidden;
+
+    .section__bar {
+        position: relative;
+        padding: 22px 0;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 100%;
+            width: 100vw;
+            background-color: #F9F1E7;
+            z-index: 1;
+        }
+    }
+
+    .section__bar-inner {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+    }
+
+    .section__bar-widgets {
+        display: flex;
+        gap: 20px;
+    }
+
+    .section__widgets {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .section__info {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #000;
+
+        &:not(:first-child) {
+            padding-left: 45px;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                width: 2px;
+                height: 35px;
+                background-color: #9f9f9f;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
     .section__items {
         padding: 63px 0 70px;
     }
+
     .section__items > ul {
         list-style-type: none;
         display: flex;
@@ -1364,10 +1426,94 @@ h6 {
         gap: 40px 0;
     }
 
-    .section__items > ul > li {
+    .section__items>ul>li {
         flex-basis: 25%;
         padding: 0 16px;
         flex-shrink: 1;
         flex-grow: 1;
+    }
+
+}
+
+/* ------------------------------------------------------------ *\
+    Filters
+\* ------------------------------------------------------------ */
+
+.filters {
+    display: flex;
+    gap: 11px;
+
+    .filter__text {
+        font-size: 20px;
+        line-height: 1.2;
+        color: #000;
+    }
+}
+
+/* ------------------------------------------------------------ *\
+    List-views
+\* ------------------------------------------------------------ */
+
+.list-views {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* ------------------------------------------------------------ *\
+    Form-sorting
+\* ------------------------------------------------------------ */
+
+.form-sorting {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    color: #000;
+
+    .form__cols {
+        display: flex;
+        gap: 29px
+    }
+
+    .form__col--flex {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+    }
+
+    .form__label {
+        letter-spacing: inherit;
+    }
+
+    .form__controls input,
+    .form__controls select {
+        padding: 13px;
+        font-size: inherit;
+        line-height: inherit;
+        color: #9f9f9f;
+        border: none;
+        background: #fff;
+        border-radius: 0px;
+        letter-spacing: inherit;
+    }
+
+    .form__controls input[name=show] {
+        width: 55px;
+        aspect-ratio: 1;
+    }
+
+    .form__controls select {
+        max-width: 188px;
+        width: 100%;
+        height: 55px;
+        padding: 13px 20px 13px 30px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+        &:-ms-expand {
+            display: none;
+        }
     }
 }

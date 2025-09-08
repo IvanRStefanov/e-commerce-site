@@ -98,6 +98,67 @@
 
         <section class="section-listing">
             <div class="shell">
+                <div class="section__bar">
+                    <div class="section__bar-inner">
+                        <div class="section__bar-widgets">
+                            <div class="section__widgets">
+                                <div class="section__filters">
+                                    <div class="filters">
+                                        <div class="filters__ico">
+                                            <img src="media/images/Filter-ico.svg" alt="">
+                                        </div><!-- /.filters__ico -->
+                                        <div class="filter__text">
+                                            <p>Filter</p>
+                                        </div><!-- /.filter__text -->
+                                    </div><!-- /.filters -->
+                                </div><!-- /.section__filters -->
+                                <div class="section__views">
+                                    <ul class="list-views">
+                                        <li class="list__item"><img src="media/images/dots-square-ico.svg" alt=""
+                                                class="list__ico"></li><!-- /.list__item -->
+                                        <li class="list__item"><img src="media/images/details-ico.svg" alt=""
+                                                class="list__ico"></li><!-- /.list__item -->
+                                    </ul><!-- /.list-views -->
+                                </div><!-- /.section__views -->
+                            </div><!-- /.section__widgets -->
+                            <div class="section__info">
+                                <p>Showing <span>1</span>&ndash;<span>16</span> of <span>32</span> results</p>
+                            </div><!-- /.section__info -->
+                        </div><!-- /.section__bar-widgets -->
+
+                        <div class="section__bar-sorting">
+                            <div class="form-sorting">
+                                <form action="?">
+                                    <div class="form__row">
+                                        <div class="form__cols">
+                                            <div class="form__col form__col--size-1 form__col--flex">
+                                                <label for="show" class="form__label">Show</label><!-- /.form__label -->
+
+                                                <div class="form__controls">
+                                                    <input type="text" class="field" name="show" id="show" placeholder="16">
+                                                </div><!-- /.form__controls -->
+                                            </div><!-- /.form__col form__col--size-1 -->
+
+                                            <div class="form__col form__col--size-2 form__col--flex">
+                                                <label for="sort-by" class="form__label">Sort by</label>
+
+                                                <div class="form__controls">
+                                                    <select name="sort-by" id="sort-by" class="select">
+                                                        <option value="default" selected>Default</option>
+                                                        <option value="1">Price(low -> high)</option>
+                                                        <option value="2">Price(high -> low)</option>
+                                                        <option value="3">Name(A -> Z)</option>
+                                                        <option value="4">Name(Z -> A)</option>
+                                                    </select><!-- /#.select -->
+                                                </div><!-- /.form__controls -->
+                                            </div><!-- /.form__col form__col--size-2 -->
+                                        </div><!-- /.form__cols -->
+                                    </div><!-- /.form__row -->
+                                </form>
+                            </div><!-- /.form-sorting -->
+                        </div><!-- /.section__bar-sorting -->
+                    </div><!-- /.section__bar-inner -->
+                </div><!-- /.section__bar -->
                 <div class="section__items">
                     <ul>
                         <li>
@@ -167,16 +228,12 @@
                         <li>
                             <div class="card-item">
                                 <div class="card__img image-fit">
-                                    <img src="media/images/2x_card-img-1.jpg" alt="">
-
-                                    <div class="card__label">
-                                        <p>-30%</p>
-                                    </div><!-- /.card__label -->
+                                    <img src="media/images/2x_card-img-9.jpg" alt="">
                                 </div><!-- /.card__img image-fit -->
 
                                 <div class="card__content">
                                     <div class="card__title">
-                                        <p>Syltherine</p>
+                                        <p>Leviosa</p>
                                     </div><!-- /.card__title -->
 
                                     <div class="card__subtitle">
@@ -185,8 +242,132 @@
 
                                     <div class="card__prices">
                                         <p>Rp 2.500.000</p>
+                                    </div><!-- /.card__prices -->
+                                </div><!-- /.card__content -->
 
-                                        <span class="card__old-price">Rp 3.500.000</span>
+                                <div class="card__pop-up">
+                                    <a href="#" class="card__btn">Add to cart</a><!-- /.card__btn -->
+
+                                    <ul class="card__widgets">
+                                        <li>
+                                            <a href="#">
+                                                <span class="card__widget-ico">
+                                                    <img src="media/images/share-ico.svg" alt="">
+                                                </span><!-- /.card__widget-ico -->
+
+                                                <span class="card__widget-text">Share</span><!-- /.card__widget-text -->
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="card__widget-ico">
+                                                    <img src="media/images/compare-ico.svg" alt="">
+                                                </span><!-- /.card__widget-ico -->
+
+                                                <span
+                                                    class="card__widget-text">Compare</span><!-- /.card__widget-text -->
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="card__widget-ico">
+                                                    <img src="media/images/hear-ico.svg" alt="">
+                                                </span><!-- /.card__widget-ico -->
+
+                                                <span class="card__widget-text">Like</span><!-- /.card__widget-text -->
+                                            </a>
+                                        </li>
+                                    </ul><!-- /.card__widgets -->
+                                </div><!-- /.card__pop-up -->
+                            </div><!-- /.card-item -->
+                        </li>
+                        <li>
+                            <div class="card-item">
+                                <div class="card__img image-fit">
+                                    <img src="media/images/2x_card-img-10.jpg" alt="">
+
+                                    <div class="card__label">
+                                        <p>-50%</p>
+                                    </div><!-- /.card__label -->
+                                </div><!-- /.card__img image-fit -->
+
+                                <div class="card__content">
+                                    <div class="card__title">
+                                        <p>Lolito</p>
+                                    </div><!-- /.card__title -->
+
+                                    <div class="card__subtitle">
+                                        <p>Luxury big sofa</p>
+                                    </div><!-- /.card__subtitle -->
+
+                                    <div class="card__prices">
+                                        <p>Rp 7.000.000</p>
+
+                                        <span class="card__old-price">Rp 14.000.000</span>
+                                    </div><!-- /.card__prices -->
+                                </div><!-- /.card__content -->
+
+                                <div class="card__pop-up">
+                                    <a href="#" class="card__btn">Add to cart</a><!-- /.card__btn -->
+
+                                    <ul class="card__widgets">
+                                        <li>
+                                            <a href="#">
+                                                <span class="card__widget-ico">
+                                                    <img src="media/images/share-ico.svg" alt="">
+                                                </span><!-- /.card__widget-ico -->
+
+                                                <span class="card__widget-text">Share</span><!-- /.card__widget-text -->
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="card__widget-ico">
+                                                    <img src="media/images/compare-ico.svg" alt="">
+                                                </span><!-- /.card__widget-ico -->
+
+                                                <span
+                                                    class="card__widget-text">Compare</span><!-- /.card__widget-text -->
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="card__widget-ico">
+                                                    <img src="media/images/hear-ico.svg" alt="">
+                                                </span><!-- /.card__widget-ico -->
+
+                                                <span class="card__widget-text">Like</span><!-- /.card__widget-text -->
+                                            </a>
+                                        </li>
+                                    </ul><!-- /.card__widgets -->
+                                </div><!-- /.card__pop-up -->
+                            </div><!-- /.card-item -->
+                        </li>
+                        <li>
+                            <div class="card-item">
+                                <div class="card__img image-fit">
+                                    <img src="media/images/2x_card-img-11.jpg" alt="">
+
+                                    <div class="card__label card__label--cyan">
+                                        <p>New</p>
+                                    </div><!-- /.card__label -->
+                                </div><!-- /.card__img image-fit -->
+
+                                <div class="card__content">
+                                    <div class="card__title">
+                                        <p>Respira</p>
+                                    </div><!-- /.card__title -->
+
+                                    <div class="card__subtitle">
+                                        <p>Outdoor bar table and stool</p>
+                                    </div><!-- /.card__subtitle -->
+
+                                    <div class="card__prices">
+                                        <p>Rp 500.000</p>
                                     </div><!-- /.card__prices -->
                                 </div><!-- /.card__content -->
 
@@ -295,16 +476,12 @@
                         <li>
                             <div class="card-item">
                                 <div class="card__img image-fit">
-                                    <img src="media/images/2x_card-img-1.jpg" alt="">
-
-                                    <div class="card__label">
-                                        <p>-30%</p>
-                                    </div><!-- /.card__label -->
+                                    <img src="media/images/2x_card-img-9.jpg" alt="">
                                 </div><!-- /.card__img image-fit -->
 
                                 <div class="card__content">
                                     <div class="card__title">
-                                        <p>Syltherine</p>
+                                        <p>Leviosa</p>
                                     </div><!-- /.card__title -->
 
                                     <div class="card__subtitle">
@@ -313,8 +490,132 @@
 
                                     <div class="card__prices">
                                         <p>Rp 2.500.000</p>
+                                    </div><!-- /.card__prices -->
+                                </div><!-- /.card__content -->
 
-                                        <span class="card__old-price">Rp 3.500.000</span>
+                                <div class="card__pop-up">
+                                    <a href="#" class="card__btn">Add to cart</a><!-- /.card__btn -->
+
+                                    <ul class="card__widgets">
+                                        <li>
+                                            <a href="#">
+                                                <span class="card__widget-ico">
+                                                    <img src="media/images/share-ico.svg" alt="">
+                                                </span><!-- /.card__widget-ico -->
+
+                                                <span class="card__widget-text">Share</span><!-- /.card__widget-text -->
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="card__widget-ico">
+                                                    <img src="media/images/compare-ico.svg" alt="">
+                                                </span><!-- /.card__widget-ico -->
+
+                                                <span
+                                                    class="card__widget-text">Compare</span><!-- /.card__widget-text -->
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="card__widget-ico">
+                                                    <img src="media/images/hear-ico.svg" alt="">
+                                                </span><!-- /.card__widget-ico -->
+
+                                                <span class="card__widget-text">Like</span><!-- /.card__widget-text -->
+                                            </a>
+                                        </li>
+                                    </ul><!-- /.card__widgets -->
+                                </div><!-- /.card__pop-up -->
+                            </div><!-- /.card-item -->
+                        </li>
+                        <li>
+                            <div class="card-item">
+                                <div class="card__img image-fit">
+                                    <img src="media/images/2x_card-img-10.jpg" alt="">
+
+                                    <div class="card__label">
+                                        <p>-50%</p>
+                                    </div><!-- /.card__label -->
+                                </div><!-- /.card__img image-fit -->
+
+                                <div class="card__content">
+                                    <div class="card__title">
+                                        <p>Lolito</p>
+                                    </div><!-- /.card__title -->
+
+                                    <div class="card__subtitle">
+                                        <p>Luxury big sofa</p>
+                                    </div><!-- /.card__subtitle -->
+
+                                    <div class="card__prices">
+                                        <p>Rp 7.000.000</p>
+
+                                        <span class="card__old-price">Rp 14.000.000</span>
+                                    </div><!-- /.card__prices -->
+                                </div><!-- /.card__content -->
+
+                                <div class="card__pop-up">
+                                    <a href="#" class="card__btn">Add to cart</a><!-- /.card__btn -->
+
+                                    <ul class="card__widgets">
+                                        <li>
+                                            <a href="#">
+                                                <span class="card__widget-ico">
+                                                    <img src="media/images/share-ico.svg" alt="">
+                                                </span><!-- /.card__widget-ico -->
+
+                                                <span class="card__widget-text">Share</span><!-- /.card__widget-text -->
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="card__widget-ico">
+                                                    <img src="media/images/compare-ico.svg" alt="">
+                                                </span><!-- /.card__widget-ico -->
+
+                                                <span
+                                                    class="card__widget-text">Compare</span><!-- /.card__widget-text -->
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="card__widget-ico">
+                                                    <img src="media/images/hear-ico.svg" alt="">
+                                                </span><!-- /.card__widget-ico -->
+
+                                                <span class="card__widget-text">Like</span><!-- /.card__widget-text -->
+                                            </a>
+                                        </li>
+                                    </ul><!-- /.card__widgets -->
+                                </div><!-- /.card__pop-up -->
+                            </div><!-- /.card-item -->
+                        </li>
+                        <li>
+                            <div class="card-item">
+                                <div class="card__img image-fit">
+                                    <img src="media/images/2x_card-img-11.jpg" alt="">
+
+                                    <div class="card__label card__label--cyan">
+                                        <p>New</p>
+                                    </div><!-- /.card__label -->
+                                </div><!-- /.card__img image-fit -->
+
+                                <div class="card__content">
+                                    <div class="card__title">
+                                        <p>Respira</p>
+                                    </div><!-- /.card__title -->
+
+                                    <div class="card__subtitle">
+                                        <p>Outdoor bar table and stool</p>
+                                    </div><!-- /.card__subtitle -->
+
+                                    <div class="card__prices">
+                                        <p>Rp 500.000</p>
                                     </div><!-- /.card__prices -->
                                 </div><!-- /.card__content -->
 
@@ -423,16 +724,12 @@
                         <li>
                             <div class="card-item">
                                 <div class="card__img image-fit">
-                                    <img src="media/images/2x_card-img-1.jpg" alt="">
-
-                                    <div class="card__label">
-                                        <p>-30%</p>
-                                    </div><!-- /.card__label -->
+                                    <img src="media/images/2x_card-img-9.jpg" alt="">
                                 </div><!-- /.card__img image-fit -->
 
                                 <div class="card__content">
                                     <div class="card__title">
-                                        <p>Syltherine</p>
+                                        <p>Leviosa</p>
                                     </div><!-- /.card__title -->
 
                                     <div class="card__subtitle">
@@ -441,8 +738,132 @@
 
                                     <div class="card__prices">
                                         <p>Rp 2.500.000</p>
+                                    </div><!-- /.card__prices -->
+                                </div><!-- /.card__content -->
 
-                                        <span class="card__old-price">Rp 3.500.000</span>
+                                <div class="card__pop-up">
+                                    <a href="#" class="card__btn">Add to cart</a><!-- /.card__btn -->
+
+                                    <ul class="card__widgets">
+                                        <li>
+                                            <a href="#">
+                                                <span class="card__widget-ico">
+                                                    <img src="media/images/share-ico.svg" alt="">
+                                                </span><!-- /.card__widget-ico -->
+
+                                                <span class="card__widget-text">Share</span><!-- /.card__widget-text -->
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="card__widget-ico">
+                                                    <img src="media/images/compare-ico.svg" alt="">
+                                                </span><!-- /.card__widget-ico -->
+
+                                                <span
+                                                    class="card__widget-text">Compare</span><!-- /.card__widget-text -->
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="card__widget-ico">
+                                                    <img src="media/images/hear-ico.svg" alt="">
+                                                </span><!-- /.card__widget-ico -->
+
+                                                <span class="card__widget-text">Like</span><!-- /.card__widget-text -->
+                                            </a>
+                                        </li>
+                                    </ul><!-- /.card__widgets -->
+                                </div><!-- /.card__pop-up -->
+                            </div><!-- /.card-item -->
+                        </li>
+                        <li>
+                            <div class="card-item">
+                                <div class="card__img image-fit">
+                                    <img src="media/images/2x_card-img-10.jpg" alt="">
+
+                                    <div class="card__label">
+                                        <p>-50%</p>
+                                    </div><!-- /.card__label -->
+                                </div><!-- /.card__img image-fit -->
+
+                                <div class="card__content">
+                                    <div class="card__title">
+                                        <p>Lolito</p>
+                                    </div><!-- /.card__title -->
+
+                                    <div class="card__subtitle">
+                                        <p>Luxury big sofa</p>
+                                    </div><!-- /.card__subtitle -->
+
+                                    <div class="card__prices">
+                                        <p>Rp 7.000.000</p>
+
+                                        <span class="card__old-price">Rp 14.000.000</span>
+                                    </div><!-- /.card__prices -->
+                                </div><!-- /.card__content -->
+
+                                <div class="card__pop-up">
+                                    <a href="#" class="card__btn">Add to cart</a><!-- /.card__btn -->
+
+                                    <ul class="card__widgets">
+                                        <li>
+                                            <a href="#">
+                                                <span class="card__widget-ico">
+                                                    <img src="media/images/share-ico.svg" alt="">
+                                                </span><!-- /.card__widget-ico -->
+
+                                                <span class="card__widget-text">Share</span><!-- /.card__widget-text -->
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="card__widget-ico">
+                                                    <img src="media/images/compare-ico.svg" alt="">
+                                                </span><!-- /.card__widget-ico -->
+
+                                                <span
+                                                    class="card__widget-text">Compare</span><!-- /.card__widget-text -->
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="card__widget-ico">
+                                                    <img src="media/images/hear-ico.svg" alt="">
+                                                </span><!-- /.card__widget-ico -->
+
+                                                <span class="card__widget-text">Like</span><!-- /.card__widget-text -->
+                                            </a>
+                                        </li>
+                                    </ul><!-- /.card__widgets -->
+                                </div><!-- /.card__pop-up -->
+                            </div><!-- /.card-item -->
+                        </li>
+                        <li>
+                            <div class="card-item">
+                                <div class="card__img image-fit">
+                                    <img src="media/images/2x_card-img-11.jpg" alt="">
+
+                                    <div class="card__label card__label--cyan">
+                                        <p>New</p>
+                                    </div><!-- /.card__label -->
+                                </div><!-- /.card__img image-fit -->
+
+                                <div class="card__content">
+                                    <div class="card__title">
+                                        <p>Respira</p>
+                                    </div><!-- /.card__title -->
+
+                                    <div class="card__subtitle">
+                                        <p>Outdoor bar table and stool</p>
+                                    </div><!-- /.card__subtitle -->
+
+                                    <div class="card__prices">
+                                        <p>Rp 500.000</p>
                                     </div><!-- /.card__prices -->
                                 </div><!-- /.card__content -->
 
@@ -551,16 +972,12 @@
                         <li>
                             <div class="card-item">
                                 <div class="card__img image-fit">
-                                    <img src="media/images/2x_card-img-1.jpg" alt="">
-
-                                    <div class="card__label">
-                                        <p>-30%</p>
-                                    </div><!-- /.card__label -->
+                                    <img src="media/images/2x_card-img-9.jpg" alt="">
                                 </div><!-- /.card__img image-fit -->
 
                                 <div class="card__content">
                                     <div class="card__title">
-                                        <p>Syltherine</p>
+                                        <p>Leviosa</p>
                                     </div><!-- /.card__title -->
 
                                     <div class="card__subtitle">
@@ -569,8 +986,6 @@
 
                                     <div class="card__prices">
                                         <p>Rp 2.500.000</p>
-
-                                        <span class="card__old-price">Rp 3.500.000</span>
                                     </div><!-- /.card__prices -->
                                 </div><!-- /.card__content -->
 
@@ -615,26 +1030,26 @@
                         <li>
                             <div class="card-item">
                                 <div class="card__img image-fit">
-                                    <img src="media/images/2x_card-img-1.jpg" alt="">
+                                    <img src="media/images/2x_card-img-10.jpg" alt="">
 
                                     <div class="card__label">
-                                        <p>-30%</p>
+                                        <p>-50%</p>
                                     </div><!-- /.card__label -->
                                 </div><!-- /.card__img image-fit -->
 
                                 <div class="card__content">
                                     <div class="card__title">
-                                        <p>Syltherine</p>
+                                        <p>Lolito</p>
                                     </div><!-- /.card__title -->
 
                                     <div class="card__subtitle">
-                                        <p>Stylish cafe chair</p>
+                                        <p>Luxury big sofa</p>
                                     </div><!-- /.card__subtitle -->
 
                                     <div class="card__prices">
-                                        <p>Rp 2.500.000</p>
+                                        <p>Rp 7.000.000</p>
 
-                                        <span class="card__old-price">Rp 3.500.000</span>
+                                        <span class="card__old-price">Rp 14.000.000</span>
                                     </div><!-- /.card__prices -->
                                 </div><!-- /.card__content -->
 
@@ -679,26 +1094,24 @@
                         <li>
                             <div class="card-item">
                                 <div class="card__img image-fit">
-                                    <img src="media/images/2x_card-img-1.jpg" alt="">
+                                    <img src="media/images/2x_card-img-11.jpg" alt="">
 
-                                    <div class="card__label">
-                                        <p>-30%</p>
+                                    <div class="card__label card__label--cyan">
+                                        <p>New</p>
                                     </div><!-- /.card__label -->
                                 </div><!-- /.card__img image-fit -->
 
                                 <div class="card__content">
                                     <div class="card__title">
-                                        <p>Syltherine</p>
+                                        <p>Respira</p>
                                     </div><!-- /.card__title -->
 
                                     <div class="card__subtitle">
-                                        <p>Stylish cafe chair</p>
+                                        <p>Outdoor bar table and stool</p>
                                     </div><!-- /.card__subtitle -->
 
                                     <div class="card__prices">
-                                        <p>Rp 2.500.000</p>
-
-                                        <span class="card__old-price">Rp 3.500.000</span>
+                                        <p>Rp 500.000</p>
                                     </div><!-- /.card__prices -->
                                 </div><!-- /.card__content -->
 
@@ -740,392 +1153,12 @@
                                 </div><!-- /.card__pop-up -->
                             </div><!-- /.card-item -->
                         </li>
-                        <li>
-                            <div class="card-item">
-                                <div class="card__img image-fit">
-                                    <img src="media/images/2x_card-img-1.jpg" alt="">
-
-                                    <div class="card__label">
-                                        <p>-30%</p>
-                                    </div><!-- /.card__label -->
-                                </div><!-- /.card__img image-fit -->
-
-                                <div class="card__content">
-                                    <div class="card__title">
-                                        <p>Syltherine</p>
-                                    </div><!-- /.card__title -->
-
-                                    <div class="card__subtitle">
-                                        <p>Stylish cafe chair</p>
-                                    </div><!-- /.card__subtitle -->
-
-                                    <div class="card__prices">
-                                        <p>Rp 2.500.000</p>
-
-                                        <span class="card__old-price">Rp 3.500.000</span>
-                                    </div><!-- /.card__prices -->
-                                </div><!-- /.card__content -->
-
-                                <div class="card__pop-up">
-                                    <a href="#" class="card__btn">Add to cart</a><!-- /.card__btn -->
-
-                                    <ul class="card__widgets">
-                                        <li>
-                                            <a href="#">
-                                                <span class="card__widget-ico">
-                                                    <img src="media/images/share-ico.svg" alt="">
-                                                </span><!-- /.card__widget-ico -->
-
-                                                <span class="card__widget-text">Share</span><!-- /.card__widget-text -->
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <span class="card__widget-ico">
-                                                    <img src="media/images/compare-ico.svg" alt="">
-                                                </span><!-- /.card__widget-ico -->
-
-                                                <span
-                                                    class="card__widget-text">Compare</span><!-- /.card__widget-text -->
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <span class="card__widget-ico">
-                                                    <img src="media/images/hear-ico.svg" alt="">
-                                                </span><!-- /.card__widget-ico -->
-
-                                                <span class="card__widget-text">Like</span><!-- /.card__widget-text -->
-                                            </a>
-                                        </li>
-                                    </ul><!-- /.card__widgets -->
-                                </div><!-- /.card__pop-up -->
-                            </div><!-- /.card-item -->
-                        </li>
-                        <li>
-                            <div class="card-item">
-                                <div class="card__img image-fit">
-                                    <img src="media/images/2x_card-img-1.jpg" alt="">
-
-                                    <div class="card__label">
-                                        <p>-30%</p>
-                                    </div><!-- /.card__label -->
-                                </div><!-- /.card__img image-fit -->
-
-                                <div class="card__content">
-                                    <div class="card__title">
-                                        <p>Syltherine</p>
-                                    </div><!-- /.card__title -->
-
-                                    <div class="card__subtitle">
-                                        <p>Stylish cafe chair</p>
-                                    </div><!-- /.card__subtitle -->
-
-                                    <div class="card__prices">
-                                        <p>Rp 2.500.000</p>
-
-                                        <span class="card__old-price">Rp 3.500.000</span>
-                                    </div><!-- /.card__prices -->
-                                </div><!-- /.card__content -->
-
-                                <div class="card__pop-up">
-                                    <a href="#" class="card__btn">Add to cart</a><!-- /.card__btn -->
-
-                                    <ul class="card__widgets">
-                                        <li>
-                                            <a href="#">
-                                                <span class="card__widget-ico">
-                                                    <img src="media/images/share-ico.svg" alt="">
-                                                </span><!-- /.card__widget-ico -->
-
-                                                <span class="card__widget-text">Share</span><!-- /.card__widget-text -->
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <span class="card__widget-ico">
-                                                    <img src="media/images/compare-ico.svg" alt="">
-                                                </span><!-- /.card__widget-ico -->
-
-                                                <span
-                                                    class="card__widget-text">Compare</span><!-- /.card__widget-text -->
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <span class="card__widget-ico">
-                                                    <img src="media/images/hear-ico.svg" alt="">
-                                                </span><!-- /.card__widget-ico -->
-
-                                                <span class="card__widget-text">Like</span><!-- /.card__widget-text -->
-                                            </a>
-                                        </li>
-                                    </ul><!-- /.card__widgets -->
-                                </div><!-- /.card__pop-up -->
-                            </div><!-- /.card-item -->
-                        </li>
-                        <li>
-                            <div class="card-item">
-                                <div class="card__img image-fit">
-                                    <img src="media/images/2x_card-img-1.jpg" alt="">
-
-                                    <div class="card__label">
-                                        <p>-30%</p>
-                                    </div><!-- /.card__label -->
-                                </div><!-- /.card__img image-fit -->
-
-                                <div class="card__content">
-                                    <div class="card__title">
-                                        <p>Syltherine</p>
-                                    </div><!-- /.card__title -->
-
-                                    <div class="card__subtitle">
-                                        <p>Stylish cafe chair</p>
-                                    </div><!-- /.card__subtitle -->
-
-                                    <div class="card__prices">
-                                        <p>Rp 2.500.000</p>
-
-                                        <span class="card__old-price">Rp 3.500.000</span>
-                                    </div><!-- /.card__prices -->
-                                </div><!-- /.card__content -->
-
-                                <div class="card__pop-up">
-                                    <a href="#" class="card__btn">Add to cart</a><!-- /.card__btn -->
-
-                                    <ul class="card__widgets">
-                                        <li>
-                                            <a href="#">
-                                                <span class="card__widget-ico">
-                                                    <img src="media/images/share-ico.svg" alt="">
-                                                </span><!-- /.card__widget-ico -->
-
-                                                <span class="card__widget-text">Share</span><!-- /.card__widget-text -->
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <span class="card__widget-ico">
-                                                    <img src="media/images/compare-ico.svg" alt="">
-                                                </span><!-- /.card__widget-ico -->
-
-                                                <span
-                                                    class="card__widget-text">Compare</span><!-- /.card__widget-text -->
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <span class="card__widget-ico">
-                                                    <img src="media/images/hear-ico.svg" alt="">
-                                                </span><!-- /.card__widget-ico -->
-
-                                                <span class="card__widget-text">Like</span><!-- /.card__widget-text -->
-                                            </a>
-                                        </li>
-                                    </ul><!-- /.card__widgets -->
-                                </div><!-- /.card__pop-up -->
-                            </div><!-- /.card-item -->
-                        </li>
-                        <li>
-                            <div class="card-item">
-                                <div class="card__img image-fit">
-                                    <img src="media/images/2x_card-img-1.jpg" alt="">
-
-                                    <div class="card__label">
-                                        <p>-30%</p>
-                                    </div><!-- /.card__label -->
-                                </div><!-- /.card__img image-fit -->
-
-                                <div class="card__content">
-                                    <div class="card__title">
-                                        <p>Syltherine</p>
-                                    </div><!-- /.card__title -->
-
-                                    <div class="card__subtitle">
-                                        <p>Stylish cafe chair</p>
-                                    </div><!-- /.card__subtitle -->
-
-                                    <div class="card__prices">
-                                        <p>Rp 2.500.000</p>
-
-                                        <span class="card__old-price">Rp 3.500.000</span>
-                                    </div><!-- /.card__prices -->
-                                </div><!-- /.card__content -->
-
-                                <div class="card__pop-up">
-                                    <a href="#" class="card__btn">Add to cart</a><!-- /.card__btn -->
-
-                                    <ul class="card__widgets">
-                                        <li>
-                                            <a href="#">
-                                                <span class="card__widget-ico">
-                                                    <img src="media/images/share-ico.svg" alt="">
-                                                </span><!-- /.card__widget-ico -->
-
-                                                <span class="card__widget-text">Share</span><!-- /.card__widget-text -->
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <span class="card__widget-ico">
-                                                    <img src="media/images/compare-ico.svg" alt="">
-                                                </span><!-- /.card__widget-ico -->
-
-                                                <span
-                                                    class="card__widget-text">Compare</span><!-- /.card__widget-text -->
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <span class="card__widget-ico">
-                                                    <img src="media/images/hear-ico.svg" alt="">
-                                                </span><!-- /.card__widget-ico -->
-
-                                                <span class="card__widget-text">Like</span><!-- /.card__widget-text -->
-                                            </a>
-                                        </li>
-                                    </ul><!-- /.card__widgets -->
-                                </div><!-- /.card__pop-up -->
-                            </div><!-- /.card-item -->
-                        </li>
-                        <li>
-                            <div class="card-item">
-                                <div class="card__img image-fit">
-                                    <img src="media/images/2x_card-img-1.jpg" alt="">
-
-                                    <div class="card__label">
-                                        <p>-30%</p>
-                                    </div><!-- /.card__label -->
-                                </div><!-- /.card__img image-fit -->
-
-                                <div class="card__content">
-                                    <div class="card__title">
-                                        <p>Syltherine</p>
-                                    </div><!-- /.card__title -->
-
-                                    <div class="card__subtitle">
-                                        <p>Stylish cafe chair</p>
-                                    </div><!-- /.card__subtitle -->
-
-                                    <div class="card__prices">
-                                        <p>Rp 2.500.000</p>
-
-                                        <span class="card__old-price">Rp 3.500.000</span>
-                                    </div><!-- /.card__prices -->
-                                </div><!-- /.card__content -->
-
-                                <div class="card__pop-up">
-                                    <a href="#" class="card__btn">Add to cart</a><!-- /.card__btn -->
-
-                                    <ul class="card__widgets">
-                                        <li>
-                                            <a href="#">
-                                                <span class="card__widget-ico">
-                                                    <img src="media/images/share-ico.svg" alt="">
-                                                </span><!-- /.card__widget-ico -->
-
-                                                <span class="card__widget-text">Share</span><!-- /.card__widget-text -->
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <span class="card__widget-ico">
-                                                    <img src="media/images/compare-ico.svg" alt="">
-                                                </span><!-- /.card__widget-ico -->
-
-                                                <span
-                                                    class="card__widget-text">Compare</span><!-- /.card__widget-text -->
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <span class="card__widget-ico">
-                                                    <img src="media/images/hear-ico.svg" alt="">
-                                                </span><!-- /.card__widget-ico -->
-
-                                                <span class="card__widget-text">Like</span><!-- /.card__widget-text -->
-                                            </a>
-                                        </li>
-                                    </ul><!-- /.card__widgets -->
-                                </div><!-- /.card__pop-up -->
-                            </div><!-- /.card-item -->
-                        </li>
-                        <li>
-                            <div class="card-item">
-                                <div class="card__img image-fit">
-                                    <img src="media/images/2x_card-img-1.jpg" alt="">
-
-                                    <div class="card__label">
-                                        <p>-30%</p>
-                                    </div><!-- /.card__label -->
-                                </div><!-- /.card__img image-fit -->
-
-                                <div class="card__content">
-                                    <div class="card__title">
-                                        <p>Syltherine</p>
-                                    </div><!-- /.card__title -->
-
-                                    <div class="card__subtitle">
-                                        <p>Stylish cafe chair</p>
-                                    </div><!-- /.card__subtitle -->
-
-                                    <div class="card__prices">
-                                        <p>Rp 2.500.000</p>
-
-                                        <span class="card__old-price">Rp 3.500.000</span>
-                                    </div><!-- /.card__prices -->
-                                </div><!-- /.card__content -->
-
-                                <div class="card__pop-up">
-                                    <a href="#" class="card__btn">Add to cart</a><!-- /.card__btn -->
-
-                                    <ul class="card__widgets">
-                                        <li>
-                                            <a href="#">
-                                                <span class="card__widget-ico">
-                                                    <img src="media/images/share-ico.svg" alt="">
-                                                </span><!-- /.card__widget-ico -->
-
-                                                <span class="card__widget-text">Share</span><!-- /.card__widget-text -->
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <span class="card__widget-ico">
-                                                    <img src="media/images/compare-ico.svg" alt="">
-                                                </span><!-- /.card__widget-ico -->
-
-                                                <span
-                                                    class="card__widget-text">Compare</span><!-- /.card__widget-text -->
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <span class="card__widget-ico">
-                                                    <img src="media/images/hear-ico.svg" alt="">
-                                                </span><!-- /.card__widget-ico -->
-
-                                                <span class="card__widget-text">Like</span><!-- /.card__widget-text -->
-                                            </a>
-                                        </li>
-                                    </ul><!-- /.card__widgets -->
-                                </div><!-- /.card__pop-up -->
-                            </div><!-- /.card-item -->
-                        </li>
-                    </ul>
-                </div><!-- /.section__items -->
+                    </ul><!-- /.card__widgets -->
+                </div><!-- /.card__pop-up -->
+            </div><!-- /.card-item -->
+            </li>
+            </ul>
+            </div><!-- /.section__items -->
             </div><!-- /.shell -->
         </section><!-- /.section-listing -->
     </main><!-- /.main -->
