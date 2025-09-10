@@ -2,155 +2,381 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <title>Single Product</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Single Product</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="shell">
-            <div class="header__inner">
-                <div class="header__logo">
-                    <a href="#" class="logo">
-                        <img src="../media/images/logo.svg" alt="Furniro Logo">
-                    </a><!-- /.logo -->
-                </div><!-- /.header__logo -->
+  <header class="header">
+    <div class="shell">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="#" class="logo">
+            <img src="../media/images/logo.svg" alt="Furniro Logo">
+          </a><!-- /.logo -->
+        </div><!-- /.header__logo -->
 
-                <div class="header__main">
-                    <div class="header__menu">
-                        <nav class="menu">
-                            <ul>
-                                <li class="menu__item">
-                                    <a href="index.html">Home</a>
-                                </li><!-- /.menu__item -->
+        <div class="header__main">
+          <div class="header__menu">
+            <nav class="menu">
+              <ul>
+                <li class="menu__item">
+                  <a href="index.html">Home</a>
+                </li><!-- /.menu__item -->
 
-                                <li class="menu__item">
-                                    <a href="shop.html">Shop</a>
-                                </li><!-- /.menu__item -->
+                <li class="menu__item">
+                  <a href="shop.html">Shop</a>
+                </li><!-- /.menu__item -->
 
-                                <li class="menu__item">
-                                    <a href="#">About</a>
-                                </li><!-- /.menu__item -->
+                <li class="menu__item">
+                  <a href="#">About</a>
+                </li><!-- /.menu__item -->
 
-                                <li class="menu__item  current-menu-item">
-                                    <a href="#">Contact</a>
-                                </li><!-- /.menu__item -->
-                            </ul>
-                        </nav><!-- /.menu -->
-                    </div><!-- /.header__menu -->
+                <li class="menu__item  current-menu-item">
+                  <a href="#">Contact</a>
+                </li><!-- /.menu__item -->
+              </ul>
+            </nav><!-- /.menu -->
+          </div><!-- /.header__menu -->
 
-                    <div class="header__widgets">
-                        <div class="widgets">
-                            <ul>
-                                <li class="widget__item">
-                                    <img src="../media/images/mdi_account-alert-outline.svg" alt="">
-                                </li><!-- /.widget__item -->
+          <div class="header__widgets">
+            <div class="widgets">
+              <ul>
+                <li class="widget__item">
+                  <img src="../media/images/mdi_account-alert-outline.svg" alt="">
+                </li><!-- /.widget__item -->
 
-                                <li class="widget__item">
-                                    <img src="../media/images/search-icons_search.svg" alt="">
-                                </li><!-- /.widget__item -->
+                <li class="widget__item">
+                  <img src="../media/images/search-icons_search.svg" alt="">
+                </li><!-- /.widget__item -->
 
-                                <li class="widget__item">
-                                    <img src="../media/images/heart.svg" alt="">
-                                </li><!-- /.widget__item -->
+                <li class="widget__item">
+                  <img src="../media/images/heart.svg" alt="">
+                </li><!-- /.widget__item -->
 
-                                <li class="widget__item">
-                                    <img src="../media/images/shoping-cart.svg" alt="">
-                                </li><!-- /.widget__item -->
-                            </ul>
-                        </div><!-- /.widgets -->
-                    </div><!-- /.header__widgets -->
-                </div><!-- /.header__main -->
-            </div><!-- /.header__inner -->
-        </div><!-- /.shell -->
-    </header><!-- /.header -->
-    
-    <main class="main">
-        <div class="breadcrumbs">
-            <div class="shell">
+                <li class="widget__item">
+                  <img src="../media/images/shoping-cart.svg" alt="">
+                </li><!-- /.widget__item -->
+              </ul>
+            </div><!-- /.widgets -->
+          </div><!-- /.header__widgets -->
+        </div><!-- /.header__main -->
+      </div><!-- /.header__inner -->
+    </div><!-- /.shell -->
+  </header><!-- /.header -->
+
+  <main class="main">
+    <div class="breadcrumbs">
+      <div class="shell">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="#">Asgaard sofa</a></li>
+        </ul>
+      </div><!-- /.shell -->
+    </div><!-- /.breadcrumbs -->
+
+    <section class="section-product">
+      <div class="shell">
+        <div class="section__inner">
+          <div class="section__media">
+            <div class="slider-product js-thumbs-slider-product">
+              <div class="slider__clip-main swiper">
+                <div class="slider__slides-main swiper-wrapper">
+                  <div class="slider__slide-main swiper-slide">
+                    <img src="../media/images/2x_main-img-1.jpg" alt="">
+                  </div><!-- /.slider__slide-main wiper-slide -->
+
+                  <div class="slider__slide-main swiper-slide">
+                    <img src="../media/images/2x_main-img-2.jpg" alt="">
+                  </div><!-- /.slider__slide-main wiper-slide -->
+
+                  <div class="slider__slide-main swiper-slide">
+                    <img src="../media/images/2x_main-img-3.jpg" alt="">
+                  </div><!-- /.slider__slide-main wiper-slide -->
+
+                  <div class="slider__slide-main swiper-slide">
+                    <img src="../media/images/2x_main-img-4.jpg" alt="">
+                  </div><!-- /.slider__slide-main wiper-slide -->
+                </div><!-- /.slider__slides-main swiper-wrapper -->
+              </div><!-- /.slider__clip-main swiper -->
+
+              <div class="slider__clip-thumbs swiper">
+                <div class="slider__slides-thumbs swiper-wrapper">
+                  <div class="slider__slide-thumb swiper-slide">
+                    <img src="../media/images/2x_thumb-img-1.jpg" alt="">
+                  </div><!-- /.slider__slide-thumb swiper-slide -->
+
+                  <div class="slider__slide-thumb swiper-slide">
+                    <img src="../media/images/2x_thumb-img-2.jpg" alt="">
+                  </div><!-- /.slider__slide-thumb swiper-slide -->
+
+                  <div class="slider__slide-thumb swiper-slide">
+                    <img src="../media/images/2x_thumb-img-3.jpg" alt="">
+                  </div><!-- /.slider__slide-thumb swiper-slide -->
+
+                  <div class="slider__slide-thumb swiper-slide">
+                    <img src="../media/images/2x_thumb-img-4.jpg" alt="">
+                  </div><!-- /.slider__slide-thumb swiper-slide -->
+                </div><!-- /.slider__slides-thumbs swiper-wrapper -->
+              </div><!-- /.slider__clip-thumbs swiper -->
+            </div><!-- /.slider-product js-thumbs-slider-product -->
+          </div><!-- /.section__media -->
+
+          <div class="section__main">
+            <div class="section__content">
+              <h1 class="section__head">
+                Asgaard sofa
+              </h1><!-- /.section__head -->
+
+              <p class="section__price">
+                Rs. 250,000.00
+              </p><!-- /.section__price -->
+            </div><!-- /.section__content -->
+
+            <div class="section__ratings">
+              <div class="section__stars">
+                <div class="stars__outer">
+                  <div class="stars__inner" style="--average: 4.5"></div><!-- /.stars__inner -->
+                </div><!-- /.stars__outer -->
+              </div><!-- /.section__stars -->
+
+              <div class="section__reviews">
+                <p><span>5</span> Customer Review</p>
+              </div><!-- /.section__reviews -->
+            </div><!-- /.section__ratings -->
+
+            <div class="section__entry">
+              <p>
+                Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted
+                hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.
+              </p>
+            </div><!-- /.section__entry -->
+
+            <div class="section__functionality">
+              <div class="form-variations">
+                <form action="#">
+                  <div class="form__row">
+                    <div class="form__row-head">
+                      <p>Size</p>
+                    </div><!-- /.form__row-head -->
+
+                    <div class="form__cols">
+                      <div class="form__col form__col--variations">
+                        <label for="l"
+                          class="form__label form__label--size">L</label><!-- /.form__label form__label--size -->
+
+                        <div class="form__controls">
+                          <input class="field field--size" type="radio" name="size" id="l" value="L" checked required>
+                        </div><!-- /.form__controls -->
+                      </div><!-- /.form__col form__col--variations -->
+
+                      <div class="form__col form__col--variations">
+                        <label for="xl"
+                          class="form__label form__label--size">XL</label><!-- /.form__label form__label--size -->
+
+                        <div class="form__controls">
+                          <input class="field field--size" type="radio" name="size" id="xl" value="XL" required>
+                        </div><!-- /.form__controls -->
+                      </div><!-- /.form__col form__col--variations -->
+
+                      <div class="form__col form__col--variations">
+                        <label for="xs"
+                          class="form__label form__label--size">XS</label><!-- /.form__label form__label--size -->
+
+                        <div class="form__controls">
+                          <input class="field field--size" type="radio" name="size" id="xs" value="XS" required>
+                        </div><!-- /.form__controls -->
+                      </div><!-- /.form__col form__col--variations -->
+                    </div><!-- /.form__cols -->
+                  </div><!-- /.form__row -->
+
+                  <div class="form__row">
+                    <div class="form__row-head">
+                      <p>Color</p>
+                    </div><!-- /.form__row-head -->
+
+                    <div class="form__cols">
+                      <div class="form__col form__col--variations">
+                        <div class="form__controls">
+                          <input class="field field--colors" type="radio" name="color" id="purple" value="purple"
+                            style="--furniture-color:#816DFA" checked required>
+                        </div><!-- /.form__controls -->
+                      </div><!-- /.form__col form__col--variations -->
+
+                      <div class="form__col form__col--variations">
+                        <div class="form__controls">
+                          <input class="field field--colors" type="radio" name="color" id="black" value="black"
+                            style="--furniture-color:#000" required>
+                        </div><!-- /.form__controls -->
+                      </div><!-- /.form__col form__col--variations -->
+
+                      <div class="form__col form__col--variations">
+                        <div class="form__controls">
+                          <input class="field field--colors" type="radio" name="color" id="gold" value="gold"
+                            style="--furniture-color:#B88E2F" required>
+                        </div><!-- /.form__controls -->
+                      </div><!-- /.form__col form__col--variations -->
+                    </div><!-- /.form__cols -->
+                  </div><!-- /.form__row -->
+
+                  <div class="form__row">
+                    <div class="form__cols">
+                      <div class="form__col form__col-1of5">
+                        <div class="form__number-input js-number-input">
+                          <button type="button" class="form__number-input-btn form__number-input-btn--minus"></button>
+
+                          <input type="number" name="quantity" min="1" value="1" step="1" required
+                            class="form__number-input-field">
+
+                          <button type="button" class="form__number-input-btn form__number-input-btn--plus"></button>
+                        </div><!-- /.form__number-input js-number-input -->
+                      </div><!-- /.form__col form__col-1of5 -->
+
+                      <div class="form__col form__col-4of5 form__col--flex">
+                        <div class="form__col form__col-1of2">
+                          <a href="#" class="add-to-cart-btn js-add-to-cart-btn"> Add To
+                            Cart</a><!-- /.add-to-cart-btn js-add-to-cart-btn -->
+                        </div><!-- /.form__col form__col-1of2 -->
+
+                        <div class="form__col form__col-1of2">
+                          <a href="#" class="compare-product js-compare-product">+
+                            Compare</a><!-- /.compare-product js-compare-product -->
+                        </div><!-- /.form__col form__col-1of2 -->
+                      </div><!-- /.form__col form__col-4of5 form__col--flex -->
+                    </div><!-- /.form__cols -->
+                  </div><!-- /.form__row -->
+                </form>
+              </div><!-- /.form-variations -->
+            </div><!-- /.section__functionality -->
+
+            <div class="section__item-info">
+              <table class="table-info">
+                <tr>
+                  <td>SKU</td>
+                  
+                  <td>SS001</td>
+                </tr>
+
+                <tr>
+                  <td>Category</td>
+                  
+                  <td>Sofas</td>
+                </tr>
+
+                <tr>
+                  <td>Tags</td>
+                  
+                  <td>Sofa, Chair, Home</td>
+                </tr>
+
+                <tr>
+                  <td>Share</td>
+                  
+                  <td>
+                    <ul class="social-links">
+                      <li>
+                        <a href="#">
+                          <img src="../media/images/socials-facebook.svg" alt="">
+                        </a>
+                      </li>
+                      
+                      <li>
+                        <a href="#">
+                          <img src="../media/images/socials-linkedin.svg" alt="">
+                        </a>
+                      </li>
+                      
+                      <li>
+                        <a href="#">
+                          <img src="../media/images/socials-twitter.svg" alt="">
+                        </a>
+                      </li>
+                    </ul><!-- /.social-links -->
+                  </td>
+                </tr>
+              </table><!-- /.table-info -->
+            </div><!-- /.section__item-info -->
+          </div><!-- /.section__main -->
+        </div><!-- /.section__inner -->
+      </div><!-- /.shell -->
+    </section><!-- /.section-product -->
+  </main><!-- /.main -->
+
+  <footer class="footer">
+    <div class="shell footer__shell">
+      <div class="footer__cols">
+        <div class="footer__col-1of3">
+          <div class="footer__contacts">
+            <div class="footer__contacts-head">
+              <p>Funiro.</p>
+            </div><!-- /.footer__contacts-head -->
+
+            <address class="footer__address">
+              <p>400 University Drive Suite 200 Coral </p>
+
+              <p>Gables,</p>
+
+              <p>FL 33134 USA</p>
+            </address><!-- /.footer__address -->
+          </div><!-- /.footer__contacts -->
+        </div><!-- /.footer__col-1of3 -->
+
+        <div class="footer__col-2of3">
+          <div class="footer__inner-cols">
+            <div class="footer__menues">
+              <div class="footer__menu">
+                <h3>Links</h3>
+
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="#">Asgaard sofa</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
                 </ul>
-            </div><!-- /.shell -->
-        </div><!-- /.breadcrumbs -->
-    </main><!-- /.main -->
-    
-    <footer class="footer">
-        <div class="shell footer__shell">
-            <div class="footer__cols">
-                <div class="footer__col-1of3">
-                    <div class="footer__contacts">
-                        <div class="footer__contacts-head">
-                            <p>Funiro.</p>
-                        </div><!-- /.footer__contacts-head -->
+              </div><!-- /.footer__menu -->
 
-                        <address class="footer__address">
-                            <p>400 University Drive Suite 200 Coral </p>
+              <div class="footer__menu">
+                <h3>Help</h3>
 
-                            <p>Gables,</p>
+                <ul>
+                  <li><a href="#">Payment Options</a></li>
+                  <li><a href="#">Returns</a></li>
+                  <li><a href="#">Privacy Policies</a></li>
+                </ul>
+              </div><!-- /.footer__menu -->
+            </div><!-- /.footer__menues -->
 
-                            <p>FL 33134 USA</p>
-                        </address><!-- /.footer__address -->
-                    </div><!-- /.footer__contacts -->
-                </div><!-- /.footer__col-1of3 -->
+            <div class="footer__subscription">
+              <h3>Newsletter</h3>
 
-                <div class="footer__col-2of3">
-                    <div class="footer__inner-cols">
-                        <div class="footer__menues">
-                            <div class="footer__menu">
-                                <h3>Links</h3>
+              <form action="#" class="footer__form">
+                <input type="email" placeholder="Enter Your Email Address" required>
 
-                                <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Shop</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div><!-- /.footer__menu -->
+                <button type="submit" class="form__btn">Subscribe</button>
+              </form><!-- /.footer__form -->
+            </div><!-- /.footer__subscription -->
+          </div><!-- /.footer__cols -->
+        </div><!-- /.footer__col-2of3 -->
+      </div><!-- /.footer__cols -->
 
-                            <div class="footer__menu">
-                                <h3>Help</h3>
+      <div class="footer__copyright">
+        <p>2023 funiro. All rights reserved.</p>
+      </div><!-- /.footer__copyright -->
+    </div><!-- /.shell footer__shell -->
+  </footer><!-- /.footer -->
 
-                                <ul>
-                                    <li><a href="#">Payment Options</a></li>
-                                    <li><a href="#">Returns</a></li>
-                                    <li><a href="#">Privacy Policies</a></li>
-                                </ul>
-                            </div><!-- /.footer__menu -->
-                        </div><!-- /.footer__menues -->
-
-                        <div class="footer__subscription">
-                            <h3>Newsletter</h3>
-
-                            <form action="#" class="footer__form">
-                                <input type="email" placeholder="Enter Your Email Address" required>
-
-                                <button type="submit" class="form__btn">Subscribe</button>
-                            </form><!-- /.footer__form -->
-                        </div><!-- /.footer__subscription -->
-                    </div><!-- /.footer__cols -->
-                </div><!-- /.footer__col-2of3 -->
-            </div><!-- /.footer__cols -->
-
-            <div class="footer__copyright">
-                <p>2023 funiro. All rights reserved.</p>
-            </div><!-- /.footer__copyright -->
-        </div><!-- /.shell footer__shell -->
-    </footer><!-- /.footer -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>
