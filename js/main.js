@@ -21,7 +21,7 @@ $(document).ready(function () {
 
         const mainSlider = $(slider).find('.slider__clip-main')[0];
         const thumbsSlider = $(slider).find('.slider__clip-thumbs')[0];
-        
+
         const thumbsSwiper = new Swiper(thumbsSlider, {
             slidesPerView: 'auto',
             watchSlidesProgress: true,
@@ -36,5 +36,20 @@ $(document).ready(function () {
                 swiper: thumbsSwiper
             },
         });
+    });
+
+    $('.js-tabs .tabs__nav a').on('click', function (event) {
+        event.preventDefault();
+
+        const $this = $(this);
+        const targetId = $this.attr('href');
+        const $parent = $this.closest('li');
+
+        $(targetId)
+            .add($parent)
+            .siblings()
+                .removeClass('is-current')
+                .end()
+            .addClass('is-current');
     });
 });

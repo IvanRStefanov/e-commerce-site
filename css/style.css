@@ -1611,7 +1611,7 @@ h6 {
     Section-product
 \* ------------------------------------------------------------ */
 .section-product {
-  padding: 32px 0 66px;
+  padding: 32px 0 57px;
 }
 .section-product .section__inner {
   display: flex;
@@ -2049,6 +2049,94 @@ h6 {
 }
 .social-links a:hover img {
   opacity: 0.7;
+}
+
+/* ------------------------------------------------------------ *\
+    Section-tabs
+\* ------------------------------------------------------------ */
+.section-tabs {
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  padding: 52px 0 64px;
+}
+
+/* ------------------------------------------------------------ *\
+    Tabs
+\* ------------------------------------------------------------ */
+.tabs .tabs__nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 52px;
+  justify-content: center;
+}
+.tabs .tabs__nav a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  color: #9F9F9F;
+  transition: color 0.3s;
+}
+.tabs .tabs__nav a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+.tabs .tabs__nav li.is-current a {
+  color: #000;
+}
+.tabs .tabs__head + .tabs__body {
+  margin-top: 44px;
+}
+.tabs .tabs__body .tabs__tab {
+  display: none;
+}
+.tabs .tabs__body .tabs__tab.is-current {
+  display: block;
+}
+.tabs .tabs__tab-entry {
+  max-width: 1026px;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 1.45;
+  letter-spacing: 0.017em;
+}
+.tabs .tabs__tab-entry ul {
+  list-style-type: none;
+}
+.tabs .tabs__tab-entry ul li {
+  position: relative;
+  padding-left: 20px;
+}
+.tabs .tabs__tab-entry ul li:before {
+  content: "•";
+  position: absolute;
+  left: 5px;
+  top: -2px;
+  color: inherit;
+  font-size: 20px;
+  line-height: 1;
+  transform: translateY(3px);
+}
+.tabs .tabs__tab-entry p + p {
+  margin-top: 32px;
+}
+.tabs .tabs__tab-entry + .tabs__tab-media-list {
+  margin-top: 36px;
+}
+.tabs .tabs__tab-media-list {
+  display: flex;
+  gap: 29px 0;
+  margin: 0 -14px;
+  flex-wrap: wrap;
+}
+.tabs .tabs__tab-item {
+  width: 50%;
+  padding: 0 14px;
+  flex-grow: 0;
+}
+.tabs .tabs__tab-img {
+  border-radius: 10px;
+  max-width: 605px;
+  width: 100%;
+  aspect-ratio: 605/348;
 }
 
 /*# sourceMappingURL=style.css.map */
