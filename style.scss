@@ -1248,6 +1248,10 @@ h6 {
     justify-content: center;
     padding: 55px 0 20px;
 
+    &:has(.hero__logo) {
+        padding: 30px 0 40px;
+    }
+
     .hero__bg {
         position: absolute;
         top: 0;
@@ -1281,6 +1285,16 @@ h6 {
 
     .hero__content {
         text-align: center;
+    }
+
+    .hero__logo {
+        display: inline-block;
+        width: 50px;
+        aspect-ratio: 50/32;
+    }
+
+    .hero__logo:not(:only-child) {
+        margin-bottom: 12px;
     }
 
     .hero__header h1 {
