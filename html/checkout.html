@@ -84,7 +84,7 @@
             <div class="hero__logo image-fit">
               <img src="../media/images/2x_logo.png" alt="">
             </div><!-- /.hero__logo image-fit -->
-            
+
             <div class="hero__header">
               <h1>Checkout</h1>
             </div><!-- /.hero__header -->
@@ -99,6 +99,206 @@
         </div><!-- /.shell -->
       </div><!-- /.hero__inner -->
     </div><!-- /.hero-inner-pages -->
+
+    <section class="section-checkout">
+      <div class="shell">
+        <div class="section__inner">
+          <div class="form-checkout">
+            <form action="#">
+              <div class="form__inner">
+                <div class="form__main">
+                  <div class="form__row">
+                    <div class="form__cols">
+                      <div class="form__col form__col--1of2">
+                        <label for="first-name" class="form__label">First Name</label><!-- /.form__label -->
+
+                        <div class="form__controls">
+                          <input type="text" class="field" name="first-name" id="first-name" required>
+                        </div><!-- /.form__controls -->
+                      </div><!-- /.form__col form__col--1of2 -->
+
+                      <div class="form__col form__col--1of2">
+                        <label for="last-name" class="form__label">Last Name</label><!-- /.form__label -->
+
+                        <div class="form__controls">
+                          <input type="text" class="field" name="last-name" id="last-name" required>
+                        </div><!-- /.form__controls -->
+                      </div><!-- /.form__col form__col--1of2 -->
+                    </div><!-- /.form__cols -->
+                  </div><!-- /.form__row -->
+
+                  <div class="form__row">
+                    <label for="company-name" class="form__label">Company Name (Optional)</label><!-- /.form__label -->
+
+                    <div class="form__controls">
+                      <input type="text" class="field" name="company-name" id="company-name" required>
+                    </div><!-- /.form__controls -->
+                  </div><!-- /.form__row -->
+
+                  <div class="form__row">
+                    <label for="country">Country / Region</label>
+
+                    <div class="form__controls">
+                      <select name="country" id="country" class="select" required>
+                        <option value="default" selected>Sri Lanka</option>
+                        <option value="1">Bulgaria</option>
+                        <option value="2">Romania</option>
+                        <option value="3">Greece</option>
+                        <option value="4">Serbia</option>
+                      </select><!-- /#.select -->
+                    </div><!-- /.form__controls -->
+                  </div><!-- /.form__row -->
+
+                  <div class="form__row">
+                    <label for="street" class="form__label">Street Address</label><!-- /.form__label -->
+
+                    <div class="form__controls">
+                      <input type="text" class="field" name="street" id="street" required>
+                    </div><!-- /.form__controls -->
+                  </div><!-- /.form__row -->
+
+                  <div class="form__row">
+                    <label for="town" class="form__label">Town / City</label><!-- /.form__label -->
+
+                    <div class="form__controls">
+                      <input type="text" class="field" name="town" id="town" required>
+                    </div><!-- /.form__controls -->
+                  </div><!-- /.form__row -->
+
+                  <div class="form__row">
+                    <label for="province">Province</label>
+
+                    <div class="form__controls">
+                      <select name="province" id="province" class="select" required>
+                        <option value="default" selected>Western Province</option>
+                        <option value="1">Central Province</option>
+                        <option value="2">Southern Province</option>
+                        <option value="3">Northern Province</option>
+                        <option value="4">Eastern Province</option>
+                      </select><!-- /#.select -->
+                    </div>
+                  </div><!-- /.form__row -->
+
+                  <div class="form__row">
+                    <label for="zip-code" class="form__label">Zip</label><!-- /.form__label -->
+
+                    <div class="form__controls">
+                      <input type="text" class="field" name="zip-code" id="zip-code" required>
+                    </div><!-- /.form__controls -->
+                  </div><!-- /.form__row -->
+
+                  <div class="form__row">
+                    <label for="phone" class="form__label">Phone</label><!-- /.form__label -->
+
+                    <div class="form__controls">
+                      <input type="text" class="field" name="phone" id="phone" required>
+                    </div><!-- /.form__controls -->
+                  </div><!-- /.form__row -->
+
+                  <div class="form__row">
+                    <label for="e-mail" class="form__label">E-mail address</label><!-- /.form__label -->
+
+                    <div class="form__controls">
+                      <input type="text" class="field" name="e-mail" id="e-mail" required>
+                    </div><!-- /.form__controls -->
+                  </div><!-- /.form__row -->
+
+                  <div class="form__row">
+                    <div class="form__controls">
+                      <input type="text" class="field" name="additional-information" id="additional-information"
+                        required>
+                    </div><!-- /.form__controls -->
+                  </div><!-- /.form__row -->
+                </div><!-- /.form__main -->
+
+                <div class="form__aside">
+                  <table class="form__table">
+                    <thead>
+                      <tr>
+                        <th>Product</th>
+                        <th>Total</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span class="form__product-name">
+                            Asgaard sofa
+                          </span> X 1
+                        </td>
+                        <td>Rs. 250,000.00</td>
+                      </tr>
+
+                      <tr>
+                        <td>Subtotal</td>
+                        <td>Rs. 250,000.00</td>
+                      </tr>
+                    </tbody>
+
+                    <tfoot>
+                      <tr>
+                        <td>Total</td>
+                        <td><strong>Rs. 250,000.00</strong></td>
+                      </tr>
+                    </tfoot>
+                  </table><!-- /.form__table -->
+
+                  <div class="form__payments">
+                    <div class="form__row form__row--payment">
+                      <label for="payment" class="form__label">Direct Bank
+                        Transfer</label><!-- /.form__label form__label--size -->
+
+                      <div class="form__controls">
+                        <input class="field" type="radio" name="payment" id="payment-bank-transfer"
+                          value="Direct Bank Transfer" required>
+
+                        <div class="form__controls-payment-info">
+                          <p>
+                            Make your payment directly into our bank account. Please use your Order ID as the payment
+                            reference. Your order will not be shipped until the funds have cleared in our account.
+                          </p>
+                        </div><!-- /.form__controls-payment-info -->
+                      </div><!-- /.form__controls -->
+                    </div><!-- /.form__row form__row--payment -->
+
+                    <div class="form__row form__row--payment">
+                      <label for="payment" class="form__label">Cash On
+                        Delivery</label><!-- /.form__label form__label--size -->
+
+                      <div class="form__controls">
+                        <input class="field" type="radio" name="payment" id="payment-cash-delivery"
+                          value="Cash On Delivery" required>
+
+                        <div class="form__controls-payment-info">
+                          <p>
+                            Make your payment when your order is delivered. Please use your Order ID as the payment
+                            reference.
+                          </p>
+                        </div><!-- /.form__controls-payment-info -->
+                      </div><!-- /.form__controls -->
+                    </div><!-- /.form__row form__row--payment -->
+                  </div><!-- /.form__payments -->
+
+                  <div class="form__aside-footer">
+                    <p>
+                      Your personal data will be used to support your experience throughout this website, to manage
+                      access to your account, and for other purposes described in our <a href="#"><strong>privacy policy</strong></a>.
+                    </p>
+                  </div><!-- /.form__aside-footer -->
+
+                  <div class="form__actions">
+                    <button type="submit" class="form__btn">Place Order</button>
+                  </div><!-- /.form__actions -->
+                </div><!-- /.form__aside -->
+              </div><!-- /.form__inner -->
+            </form>
+          </div><!-- /.form-checkout -->
+
+
+        </div><!-- /.section__inner -->
+      </div><!-- /.shell -->
+    </section><!-- /.section-checkout -->
   </main><!-- /.main -->
 
   <footer class="footer">
