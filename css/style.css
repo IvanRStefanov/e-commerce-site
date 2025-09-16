@@ -1980,7 +1980,7 @@ h6 {
 /* ------------------------------------------------------------ *\
     Btn-large
 \* ------------------------------------------------------------ */
-.btn-large {
+.btn-large, .form-checkout .form__btn {
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;
@@ -1997,7 +1997,7 @@ h6 {
   transition: background-color, border-color, color;
   transition-duration: 0.3s;
 }
-.btn-large:hover, .btn-large:focus {
+.btn-large:hover, .form-checkout .form__btn:hover, .btn-large:focus, .form-checkout .form__btn:focus {
   background-color: #B88E2F;
   border-color: #B88E2F;
   color: #fff;
@@ -2148,6 +2148,249 @@ h6 {
   max-width: 605px;
   width: 100%;
   aspect-ratio: 605/348;
+}
+
+/* ------------------------------------------------------------ *\
+    Section-checkout
+\* ------------------------------------------------------------ */
+.section-checkout {
+  padding: 105px 0 123px;
+}
+@media screen and (min-width: 1200px) {
+  .section-checkout .section--shell {
+    padding: 0 55px;
+    max-width: 1197px;
+  }
+}
+
+/* ------------------------------------------------------------ *\
+    Form-checkout
+\* ------------------------------------------------------------ */
+.form-checkout input:not([type=radio]):not([type=checkbox]),
+.form-checkout textarea,
+.form-checkout select {
+  width: 100%;
+  border-radius: 10px;
+  appearance: none;
+  border: 1px solid #9F9F9F;
+  font-family: "Poppins", sans-serif;
+  font-size: inherit;
+  color: #9F9F9F;
+  padding: 0 29px;
+}
+.form-checkout input[type=radio] {
+  appearance: none;
+}
+.form-checkout .field:not([type=checkbox]):not([type=radio]),
+.form-checkout .select {
+  height: 75px;
+}
+.form-checkout .form__label + .form__controls {
+  margin-top: 23px;
+}
+.form-checkout .form__row > .form__controls:first-child {
+  margin-top: 65px;
+}
+.form-checkout .form__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 30px;
+}
+.form-checkout .form__main {
+  flex-basis: 454px;
+}
+.form-checkout .form__header h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.form-checkout .form__header + .form__main-body {
+  margin-top: 44px;
+}
+.form-checkout .form__cols {
+  display: flex;
+  gap: 0 31px;
+}
+.form-checkout .form__col {
+  width: 50%;
+}
+.form-checkout .form__label {
+  color: #000;
+  font-weight: 500;
+}
+.form-checkout .form__aside {
+  flex-basis: 529px;
+}
+.form-checkout .form__row + .form__row {
+  margin-top: 40px;
+}
+.form-checkout .form__controls--select {
+  position: relative;
+}
+.form-checkout .form__controls--select:after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: 37px;
+  width: 9px;
+  aspect-ratio: 1;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(45deg) translateY(-50%);
+  pointer-events: none;
+}
+.form-checkout .form__controls--select:focus-within:after {
+  right: 30px;
+  top: 42%;
+  transform: rotate(225deg) translateY(-50%);
+}
+.form-checkout .select {
+  cursor: pointer;
+}
+.form-checkout .form__table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #000;
+}
+.form-checkout .form__table th {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+}
+.form-checkout .form__table th:first-child,
+.form-checkout .form__table td:first-child {
+  text-align: left;
+}
+.form-checkout .form__table th:nth-child(2),
+.form-checkout .form__table td:nth-child(2) {
+  text-align: right;
+}
+.form-checkout .form__table tbody tr:first-child td {
+  padding-top: 20px;
+}
+.form-checkout .form__table tbody tr:not(:first-child) td {
+  padding-top: 27px;
+}
+.form-checkout .form__table tfoot tr td {
+  padding-top: 21px;
+}
+.form-checkout .form__table tfoot td strong {
+  font-size: 24px;
+  color: #B88E2F;
+}
+.form-checkout .form__product-name {
+  color: #9F9F9F;
+}
+.form-checkout .form__product-quantity {
+  display: inline-block;
+  padding-left: 27px;
+  position: relative;
+}
+.form-checkout .form__product-quantity:before {
+  content: "x";
+  position: absolute;
+  left: 10px;
+  top: 47%;
+  transform: translateY(-50%);
+}
+.form-checkout .form__table + .form__payments {
+  margin-top: 36px;
+}
+.form-checkout .form__payments {
+  padding-top: 26px;
+  border-top: 1px solid #9F9F9F;
+}
+.form-checkout .form__accordion-header {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.form-checkout .form__label--accordion + .form__controls {
+  margin-top: 0;
+}
+.form-checkout .form__label--accordion {
+  cursor: pointer;
+  position: relative;
+  padding-left: 32px;
+  color: #9f9f9f;
+}
+.form-checkout .form__label--accordion:before {
+  content: "";
+  width: 14px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid #9F9F9F;
+  position: absolute;
+  left: 3px;
+  top: 1px;
+}
+.form-checkout .form__label--accordion:after {
+  content: "";
+  width: 12px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  opacity: 0;
+  visibility: hidden;
+}
+.form-checkout .form__label--accordion:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+.form-checkout .form__label--accordion:hover:before {
+  border-color: rgba(0, 0, 0, 0.4);
+}
+.form-checkout .form__label--accordion:hover:after {
+  opacity: 0.4;
+  visibility: visible;
+}
+.form-checkout .form__accordion-section:has(input:checked) .form__label--accordion,
+.form-checkout .form__accordion-section.is-current .form__label--accordion {
+  color: #000;
+}
+.form-checkout .form__accordion-section:has(input:checked) .form__label--accordion:after,
+.form-checkout .form__accordion-section.is-current .form__label--accordion:after {
+  opacity: 1;
+  visibility: visible;
+}
+.form-checkout .form__accordion-section .form__accordion-body {
+  display: none;
+}
+.form-checkout .form__accordion-section.is-current .form__accordion-body {
+  display: block;
+}
+.form-checkout .form__accordion-body {
+  margin-top: 16px;
+  line-height: 1.44;
+}
+.form-checkout .form__accordion-section + .form__accordion-section {
+  margin-top: 15px;
+}
+.form-checkout .form__aside-footer {
+  margin-top: 26px;
+  line-height: 1.44;
+  font-weight: 300;
+  color: #000;
+}
+.form-checkout .form__aside-footer a {
+  text-decoration: none;
+  color: inherit;
+}
+.form-checkout .form__aside-footer a:hover {
+  text-decoration: underline;
+}
+.form-checkout .form__aside-footer strong {
+  font-weight: 600;
+}
+.form-checkout .form__actions {
+  text-align: center;
+  margin-top: 39px;
+}
+.form-checkout .form__btn {
+  display: inline-block;
+  max-width: 318px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

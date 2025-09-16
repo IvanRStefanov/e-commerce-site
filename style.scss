@@ -2467,7 +2467,7 @@ h6 {
         color: #000;
     }
 
-    .tabs__head + .tabs__body {
+    .tabs__head+.tabs__body {
         margin-top: 44px;
     }
 
@@ -2507,11 +2507,11 @@ h6 {
         }
     }
 
-    .tabs__tab-entry p + p {
+    .tabs__tab-entry p+p {
         margin-top: 32px;
     }
 
-    .tabs__tab-entry + .tabs__tab-media-list {
+    .tabs__tab-entry+.tabs__tab-media-list {
         margin-top: 36px;
     }
 
@@ -2533,5 +2533,304 @@ h6 {
         max-width: 605px;
         width: 100%;
         aspect-ratio: 605 / 348;
+    }
+}
+
+/* ------------------------------------------------------------ *\
+    Section-checkout
+\* ------------------------------------------------------------ */
+.section-checkout {
+    padding: 105px 0 123px;
+
+    .section--shell {
+        @media screen and (min-width: 1200px) {
+            padding: 0 55px;
+            max-width: calc(1087px + (2 * 55px));
+        }
+    }
+}
+
+/* ------------------------------------------------------------ *\
+    Form-checkout
+\* ------------------------------------------------------------ */
+
+.form-checkout {
+
+    input:not([type="radio"]):not([type="checkbox"]),
+    textarea,
+    select {
+        width: 100%;
+        border-radius: 10px;
+        appearance: none;
+        border: 1px solid #9F9F9F;
+        font-family: $ff-sans-serif;
+        font-size: inherit;
+        color: #9F9F9F;
+        padding: 0 29px;
+    }
+
+    input[type="radio"] {
+        appearance: none;
+    }
+
+    .field:not([type="checkbox"]):not([type="radio"]),
+    .select {
+        height: 75px;
+    }
+
+    .form__label+.form__controls {
+        margin-top: 23px;
+    }
+
+    .form__row>.form__controls:first-child {
+        margin-top: 65px;
+    }
+
+    .form__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 0 30px;
+    }
+
+    .form__main {
+        flex-basis: 454px;
+    }
+
+    .form__header h2 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .form__header+.form__main-body {
+        margin-top: 44px;
+    }
+
+    .form__cols {
+        display: flex;
+        gap: 0 31px;
+    }
+
+    .form__col {
+        width: 50%;
+    }
+
+    .form__label {
+        color: #000;
+        font-weight: 500;
+    }
+
+    .form__aside {
+        flex-basis: 529px;
+    }
+
+    .form__row+.form__row {
+        margin-top: 40px;
+    }
+
+    .form__controls--select {
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 45%;
+            right: 37px;
+            width: 9px;
+            aspect-ratio: 1;
+            border-bottom: 2px solid #000;
+            border-right: 2px solid #000;
+            transform: rotate(45deg) translateY(-50%);
+            pointer-events: none;
+        }
+    }
+
+    .form__controls--select:focus-within:after {
+        right: 30px;
+        top: 42%;
+        transform: rotate(225deg) translateY(-50%);
+    }
+
+    .select {
+        cursor: pointer;
+    }
+
+    .form__table {
+        width: 100%;
+        border-collapse: collapse;
+        color: #000;
+    }
+
+    .form__table th {
+        color: #000;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .form__table th:first-child,
+    .form__table td:first-child {
+        text-align: left;
+    }
+
+    .form__table th:nth-child(2),
+    .form__table td:nth-child(2) {
+        text-align: right;
+    }
+
+    .form__table tbody tr:first-child td {
+        padding-top: 20px;
+    }
+
+    .form__table tbody tr:not(:first-child) td {
+        padding-top: 27px;
+    }
+
+    .form__table tfoot tr td {
+        padding-top: 21px;
+    }
+
+    .form__table tfoot td strong {
+        font-size: 24px;
+        color: #B88E2F;
+    }
+
+    .form__product-name {
+        color: #9F9F9F
+    }
+
+    .form__product-quantity {
+        display: inline-block;
+        padding-left: 27px;
+        position: relative;
+
+        &:before {
+            content: 'x';
+            position: absolute;
+            left: 10px;
+            top: 47%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .form__table + .form__payments {
+        margin-top: 36px;
+    }
+
+    .form__payments {
+        padding-top: 26px;
+        border-top: 1px solid #9F9F9F;
+    }
+
+    .form__accordion-header {
+        display: inline-flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .form__label--accordion + .form__controls {
+        margin-top: 0;
+    }
+
+    .form__label--accordion {
+        cursor: pointer;
+        position: relative;
+        padding-left: 32px;
+        color: #9f9f9f;
+
+        &:before {
+            content: '';
+            width: 14px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            border: 1px solid #9F9F9F;
+            position: absolute;
+            left: 3px;
+            top: 1px;
+        }
+
+        &:after {
+            content: '';
+            width: 12px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-color: #000;
+            position: absolute;
+            left: 4px;
+            top: 2px;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    .form__label--accordion:hover {
+        color: rgba($color: #000000, $alpha: 0.6);
+        
+        &:before {
+            border-color: rgba($color: #000000, $alpha: 0.4);
+        }
+
+        &:after {
+            opacity: 0.4;
+            visibility: visible;
+        }
+    }
+
+    .form__accordion-section:has(input:checked) .form__label--accordion,
+    .form__accordion-section.is-current .form__label--accordion {
+        color: #000;
+    }
+
+    .form__accordion-section:has(input:checked) .form__label--accordion:after,
+    .form__accordion-section.is-current .form__label--accordion:after {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .form__accordion-section .form__accordion-body {
+        display: none;
+    }
+
+    .form__accordion-section.is-current .form__accordion-body {
+        display: block;
+    }
+
+    .form__accordion-body {
+        margin-top: 16px;
+        line-height: 1.44;
+    }
+
+    .form__accordion-section + .form__accordion-section {
+        margin-top: 15px;
+    }
+
+    .form__aside-footer {
+        margin-top: 26px;
+        line-height: 1.44;
+        font-weight: 300;
+        color: #000;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        strong {
+            font-weight: 600;
+        }
+    }
+
+    .form__actions {
+        text-align: center;
+        margin-top: 39px;
+    }
+
+    .form__btn {
+        @extend .btn-large;
+        display: inline-block;
+        max-width: 318px;
+        width: 100%;
     }
 }

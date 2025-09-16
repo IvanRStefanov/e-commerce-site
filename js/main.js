@@ -49,7 +49,16 @@ $(document).ready(function () {
             .add($parent)
             .siblings()
                 .removeClass('is-current')
-                .end()
-            .addClass('is-current');
+            .end()
+                .addClass('is-current');
+    });
+
+    $('.js-form-accordion .form__accordion-header').on('click', function () {
+        $(this)
+            .closest('.form__accordion-section')
+                .siblings()
+                .removeClass('is-current')
+            .end()
+                .addClass('is-current');
     });
 });
