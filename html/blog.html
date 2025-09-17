@@ -2,569 +2,585 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Blog</title>
 </head>
 
 <body>
-    <header class="header">
+  <header class="header">
+    <div class="shell">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="#" class="logo">
+            <img src="../media/images/logo.svg" alt="Furniro Logo">
+          </a><!-- /.logo -->
+        </div><!-- /.header__logo -->
+
+        <div class="header__main">
+          <div class="header__menu">
+            <nav class="menu">
+              <ul>
+                <li class="menu__item">
+                  <a href="index.html">Home</a>
+                </li><!-- /.menu__item -->
+
+                <li class="menu__item">
+                  <a href="shop.html">Shop</a>
+                </li><!-- /.menu__item -->
+
+                <li class="menu__item">
+                  <a href="#">About</a>
+                </li><!-- /.menu__item -->
+
+                <li class="menu__item  current-menu-item">
+                  <a href="#">Contact</a>
+                </li><!-- /.menu__item -->
+              </ul>
+            </nav><!-- /.menu -->
+          </div><!-- /.header__menu -->
+
+          <div class="header__widgets">
+            <div class="widgets">
+              <ul>
+                <li class="widget__item">
+                  <img src="../media/images/mdi_account-alert-outline.svg" alt="">
+                </li><!-- /.widget__item -->
+
+                <li class="widget__item">
+                  <img src="../media/images/search-icons_search.svg" alt="">
+                </li><!-- /.widget__item -->
+
+                <li class="widget__item">
+                  <img src="../media/images/heart.svg" alt="">
+                </li><!-- /.widget__item -->
+
+                <li class="widget__item">
+                  <img src="../media/images/shoping-cart.svg" alt="">
+                </li><!-- /.widget__item -->
+              </ul>
+            </div><!-- /.widgets -->
+          </div><!-- /.header__widgets -->
+        </div><!-- /.header__main -->
+      </div><!-- /.header__inner -->
+    </div><!-- /.shell -->
+  </header><!-- /.header -->
+
+  <main class="main">
+    <div class="hero-inner-pages">
+      <div class="hero__bg image-fit">
+        <img src="../media/images/2x_hero-img-inner-pages.jpg" alt="">
+      </div><!-- /.hero__bg image-fit -->
+
+      <div class="hero__inner">
         <div class="shell">
-            <div class="header__inner">
-                <div class="header__logo">
-                    <a href="#" class="logo">
-                        <img src="../media/images/logo.svg" alt="Furniro Logo">
-                    </a><!-- /.logo -->
-                </div><!-- /.header__logo -->
+          <div class="hero__content">
+            <div class="hero__logo image-fit">
+              <img src="../media/images/2x_logo.png" alt="">
+            </div><!-- /.hero__logo image-fit -->
 
-                <div class="header__main">
-                    <div class="header__menu">
-                        <nav class="menu">
-                            <ul>
-                                <li class="menu__item">
-                                    <a href="index.html">Home</a>
-                                </li><!-- /.menu__item -->
+            <div class="hero__header">
+              <h1>Blog</h1>
+            </div><!-- /.hero__header -->
 
-                                <li class="menu__item">
-                                    <a href="shop.html">Shop</a>
-                                </li><!-- /.menu__item -->
-
-                                <li class="menu__item">
-                                    <a href="#">About</a>
-                                </li><!-- /.menu__item -->
-
-                                <li class="menu__item  current-menu-item">
-                                    <a href="#">Contact</a>
-                                </li><!-- /.menu__item -->
-                            </ul>
-                        </nav><!-- /.menu -->
-                    </div><!-- /.header__menu -->
-
-                    <div class="header__widgets">
-                        <div class="widgets">
-                            <ul>
-                                <li class="widget__item">
-                                    <img src="../media/images/mdi_account-alert-outline.svg" alt="">
-                                </li><!-- /.widget__item -->
-
-                                <li class="widget__item">
-                                    <img src="../media/images/search-icons_search.svg" alt="">
-                                </li><!-- /.widget__item -->
-
-                                <li class="widget__item">
-                                    <img src="../media/images/heart.svg" alt="">
-                                </li><!-- /.widget__item -->
-
-                                <li class="widget__item">
-                                    <img src="../media/images/shoping-cart.svg" alt="">
-                                </li><!-- /.widget__item -->
-                            </ul>
-                        </div><!-- /.widgets -->
-                    </div><!-- /.header__widgets -->
-                </div><!-- /.header__main -->
-            </div><!-- /.header__inner -->
+            <div class="hero__breadcrumbs">
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div><!-- /.hero__breadcrumbs -->
+          </div><!-- /.hero__content -->
         </div><!-- /.shell -->
-    </header><!-- /.header -->
-
-    <main class="main">
-        <div class="hero-inner-pages">
-            <div class="hero__bg image-fit">
-                <img src="../media/images/2x_hero-img-inner-pages.jpg" alt="">
-            </div><!-- /.hero__bg image-fit -->
-
-            <div class="hero__inner">
-                <div class="shell">
-                    <div class="hero__content">
-                        <div class="hero__logo image-fit">
-                            <img src="../media/images/2x_logo.png" alt="">
-                        </div><!-- /.hero__logo image-fit -->
-
-                        <div class="hero__header">
-                            <h1>Blog</h1>
-                        </div><!-- /.hero__header -->
-
-                        <div class="hero__breadcrumbs">
-                            <ul>
-                                <li><a href="home.html">Home</a></li>
-                                <li><a href="#">Blog</a></li>
-                            </ul>
-                        </div><!-- /.hero__breadcrumbs -->
-                    </div><!-- /.hero__content -->
-                </div><!-- /.shell -->
-            </div><!-- /.hero__inner -->
-        </div><!-- /.hero-inner-pages -->
-
-        <section class="section-blog">
-            <div class="shell">
-                <div class="section__inner">
-                    <div class="section__main">
-                        <ul class="section__list">
-                            <div class="section__list-item">
-                                <div class="card-blog">
-                                    <div class="card__media image-fit">
-                                        <img src="../media/images/2x-card-blog-1.jpg" alt="">
-                                    </div><!-- /.card__media image-fit -->
-
-                                    <ul class="card__meta-list">
-                                        <li class="card__meta-list-item">
-                                            <div class="card__meta-list-item-ico">
-                                                <img src="../media/images/user-ico.svg" alt="">
-                                            </div><!-- /.card__meta-list-item-ico -->
-
-                                            <div class="card__meta-list-item-text">
-                                                <p>Admin</p>
-                                            </div><!-- /.card__meta-list-item-text -->
-                                        </li><!-- /.card__meta-list-item -->
-
-                                        <li class="card__meta-list-item">
-                                            <div class="card__meta-list-item-ico">
-                                                <img src="../media/images/date-ico.svg" alt="">
-                                            </div><!-- /.card__meta-list-item-ico -->
-
-                                            <div class="card__meta-list-item-text">
-                                                <p>14 Oct 2022</p>
-                                            </div><!-- /.card__meta-list-item-text -->
-                                        </li><!-- /.card__meta-list-item -->
-
-                                        <li class="card__meta-list-item">
-                                            <div class="card__meta-list-item-ico">
-                                                <img src="../media/images/tag-ico.svg" alt="">
-                                            </div><!-- /.card__meta-list-item-ico -->
-
-                                            <div class="card__meta-list-item-text">
-                                                <p>Wood</p>
-                                            </div><!-- /.card__meta-list-item-text -->
-                                        </li><!-- /.card__meta-list-item -->
-                                    </ul><!-- /.card__meta-list -->
-
-                                    <div class="card__text">
-                                        <h3 class="card__header">
-                                            Going all-in with millennial design
-                                        </h3><!-- /.card__header -->
-
-                                        <p class="card__entry">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae
-                                            ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam
-                                            ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero
-                                            enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh
-                                            cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper
-                                            dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod
-                                            elementum.
-                                        </p>
-                                    </div><!-- /.card__text -->
-
-                                    <div class="card__actions">
-                                        <a href="#" class="btn-text">Read more</a><!-- /.btn-text -->
-                                    </div><!-- /.card__actions -->
-                                </div><!-- /.card-blog -->
-                            </div><!-- /.section__list-item -->
-
-                            <div class="section__list-item">
-                                <div class="card-blog">
-                                    <div class="card__media image-fit">
-                                        <img src="../media/images/2x-card-blog-2.jpg" alt="">
-                                    </div><!-- /.card__media image-fit -->
-
-                                    <ul class="card__meta-list">
-                                        <li class="card__meta-list-item">
-                                            <div class="card__meta-list-item-ico">
-                                                <img src="../media/images/user-ico.svg" alt="">
-                                            </div><!-- /.card__meta-list-item-ico -->
-
-                                            <div class="card__meta-list-item-text">
-                                                <p>Admin</p>
-                                            </div><!-- /.card__meta-list-item-text -->
-                                        </li><!-- /.card__meta-list-item -->
-
-                                        <li class="card__meta-list-item">
-                                            <div class="card__meta-list-item-ico">
-                                                <img src="../media/images/date-ico.svg" alt="">
-                                            </div><!-- /.card__meta-list-item-ico -->
-
-                                            <div class="card__meta-list-item-text">
-                                                <p>14 Oct 2022</p>
-                                            </div><!-- /.card__meta-list-item-text -->
-                                        </li><!-- /.card__meta-list-item -->
-
-                                        <li class="card__meta-list-item">
-                                            <div class="card__meta-list-item-ico">
-                                                <img src="../media/images/tag-ico.svg" alt="">
-                                            </div><!-- /.card__meta-list-item-ico -->
-
-                                            <div class="card__meta-list-item-text">
-                                                <p>Handmade</p>
-                                            </div><!-- /.card__meta-list-item-text -->
-                                        </li><!-- /.card__meta-list-item -->
-                                    </ul><!-- /.card__meta-list -->
-
-                                    <div class="card__text">
-                                        <h3 class="card__header">
-                                            Exploring new ways of decorating
-                                        </h3><!-- /.card__header -->
-
-                                        <p class="card__entry">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae
-                                            ultricies leo integer malesuada nunc. In nulla posuere sollicitudin
-                                            aliquam
-                                            ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet.
-                                            Libero
-                                            enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat.
-                                            Nibh
-                                            cras pulvinar mattis nunc sed blandit libero. Pellentesque elit
-                                            ullamcorper
-                                            dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean
-                                            euismod
-                                            elementum.
-                                        </p>
-                                    </div><!-- /.card__text -->
-
-                                    <div class="card__actions">
-                                        <a href="#" class="btn-text">Read more</a><!-- /.btn-text -->
-                                    </div><!-- /.card__actions -->
-                                </div><!-- /.card-blog -->
-                            </div><!-- /.section__list-item -->
-
-                            <div class="section__list-item">
-                                <div class="card-blog">
-                                    <div class="card__media image-fit">
-                                        <img src="../media/images/2x-card-blog-3.jpg" alt="">
-                                    </div><!-- /.card__media image-fit -->
-
-                                    <ul class="card__meta-list">
-                                        <li class="card__meta-list-item">
-                                            <div class="card__meta-list-item-ico">
-                                                <img src="../media/images/user-ico.svg" alt="">
-                                            </div><!-- /.card__meta-list-item-ico -->
-
-                                            <div class="card__meta-list-item-text">
-                                                <p>Admin</p>
-                                            </div><!-- /.card__meta-list-item-text -->
-                                        </li><!-- /.card__meta-list-item -->
-
-                                        <li class="card__meta-list-item">
-                                            <div class="card__meta-list-item-ico">
-                                                <img src="../media/images/date-ico.svg" alt="">
-                                            </div><!-- /.card__meta-list-item-ico -->
-
-                                            <div class="card__meta-list-item-text">
-                                                <p>14 Oct 2022</p>
-                                            </div><!-- /.card__meta-list-item-text -->
-                                        </li><!-- /.card__meta-list-item -->
-
-                                        <li class="card__meta-list-item">
-                                            <div class="card__meta-list-item-ico">
-                                                <img src="../media/images/tag-ico.svg" alt="">
-                                            </div><!-- /.card__meta-list-item-ico -->
-
-                                            <div class="card__meta-list-item-text">
-                                                <p>Wood</p>
-                                            </div><!-- /.card__meta-list-item-text -->
-                                        </li><!-- /.card__meta-list-item -->
-                                    </ul><!-- /.card__meta-list -->
-
-                                    <div class="card__text">
-                                        <h3 class="card__header">
-                                            Handmade pieces that took time to make
-                                        </h3><!-- /.card__header -->
-
-                                        <p class="card__entry">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae
-                                            ultricies leo integer malesuada nunc. In nulla posuere sollicitudin
-                                            aliquam
-                                            ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet.
-                                            Libero
-                                            enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat.
-                                            Nibh
-                                            cras pulvinar mattis nunc sed blandit libero. Pellentesque elit
-                                            ullamcorper
-                                            dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean
-                                            euismod
-                                            elementum.
-                                        </p>
-                                    </div><!-- /.card__text -->
-
-                                    <div class="card__actions">
-                                        <a href="#" class="btn-text">Read more</a><!-- /.btn-text -->
-                                    </div><!-- /.card__actions -->
-                                </div><!-- /.card-blog -->
-                            </div><!-- /.section__list-item -->
-                        </ul><!-- /.section__list -->
-
-                        <div class="section__pagination">
-                            <div class="paging">
-                                <div class="paging__prev disabled"><a href="#">Previous</a></div><!-- /.paging__prev -->
-
-                                <ul class="paging__pages">
-                                    <li class="paging__current-page"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                </ul><!-- /.paging__pages -->
-
-                                <div class="paging__next"><a href="#">Next</a></div><!-- /.paging__next -->
-                            </div><!-- /.paging -->
-                        </div><!-- /.section__pagination -->
-                    </div><!-- /.section__main -->
-
-                    <div class="section__aside">
-                        <div class="section__search">
-                            <div class="form-search">
-                                <form action="?">
-                                    <input type="search" placeholder="Search blog posts..." required>
-                                    <button type="submit" class="form__btn">Search</button>
-                                </form>
-                            </div><!-- /.form-search -->
-                        </div><!-- /.section__search -->
-
-                        <div class="section__categories-list">
-                            <ul class="list-categories">
-                                <li><a href="#">Crafts <span>2</span></a></li>
-                                <li><a href="#">Design <span>8</span></a></li>
-                                <li><a href="#">Handmade <span>7</span></a></li>
-                                <li><a href="#">Interior <span>1</span></a></li>
-                                <li><a href="#">Wood <span>6</span></a></li>
-                            </ul><!-- /.list-categories -->
-                        </div><!-- /.section__categories-list -->
-
-                        <div class="section__recent-posts-list">
-                            <ul>
-                                <li>
-                                    <div class="card-recent-post">
-                                        <a href="#"></a>
-
-                                        <div class="card__inner">
-                                            <div class="card__img image-fit">
-                                                <img src="../media/images/2x_card-post-img-1.jpg" alt="">
-                                            </div><!-- /.card__img image-fit -->
-
-                                            <div class="card__content">
-                                                <div class="card__title">
-                                                    <p>Going all-in with millennial design</p>
-                                                </div><!-- /.card__title -->
-
-                                                <div class="card__date">
-                                                    <p>03 Aug 2022</p>
-                                                </div><!-- /.card__date -->
-                                            </div><!-- /.card__content -->
-                                        </div><!-- /.card__inner -->
-                                    </div><!-- /.card-recent-post -->
-                                </li>
-
-                                <li>
-                                    <div class="card-recent-post">
-                                        <a href="#"></a>
-
-                                        <div class="card__inner">
-                                            <div class="card__img image-fit">
-                                                <img src="../media/images/2x_card-post-img-2.jpg" alt="">
-                                            </div><!-- /.card__img image-fit -->
-
-                                            <div class="card__content">
-                                                <div class="card__title">
-                                                    <p>Exploring new ways of decorating</p>
-                                                </div><!-- /.card__title -->
-
-                                                <div class="card__date">
-                                                    <p>03 Aug 2022</p>
-                                                </div><!-- /.card__date -->
-                                            </div><!-- /.card__content -->
-                                        </div><!-- /.card__inner -->
-                                    </div><!-- /.card-recent-post -->
-                                </li>
-
-                                <li>
-                                    <div class="card-recent-post">
-                                        <a href="#"></a>
-
-                                        <div class="card__inner">
-                                            <div class="card__img image-fit">
-                                                <img src="../media/images/2x_card-post-img-3.jpg" alt="">
-                                            </div><!-- /.card__img image-fit -->
-
-                                            <div class="card__content">
-                                                <div class="card__title">
-                                                    <p>Handmade pieces that took time to make</p>
-                                                </div><!-- /.card__title -->
-
-                                                <div class="card__date">
-                                                    <p>03 Aug 2022</p>
-                                                </div><!-- /.card__date -->
-                                            </div><!-- /.card__content -->
-                                        </div><!-- /.card__inner -->
-                                    </div><!-- /.card-recent-post -->
-                                </li>
-
-                                <li>
-                                    <div class="card-recent-post">
-                                        <a href="#"></a>
-
-                                        <div class="card__inner">
-                                            <div class="card__img image-fit">
-                                                <img src="../media/images/2x_card-post-img-4.jpg" alt="">
-                                            </div><!-- /.card__img image-fit -->
-
-                                            <div class="card__content">
-                                                <div class="card__title">
-                                                    <p>Modern home in Milan</p>
-                                                </div><!-- /.card__title -->
-
-                                                <div class="card__date">
-                                                    <p>03 Aug 2022</p>
-                                                </div><!-- /.card__date -->
-                                            </div><!-- /.card__content -->
-                                        </div><!-- /.card__inner -->
-                                    </div><!-- /.card-recent-post -->
-                                </li>
-
-                                <li>
-                                    <div class="card-recent-post">
-                                        <a href="#"></a>
-
-                                        <div class="card__inner">
-                                            <div class="card__img image-fit">
-                                                <img src="../media/images/2x_card-post-img-5.jpg" alt="">
-                                            </div><!-- /.card__img image-fit -->
-
-                                            <div class="card__content">
-                                                <div class="card__title">
-                                                    <p>Colorful office redesign</p>
-                                                </div><!-- /.card__title -->
-
-                                                <div class="card__date">
-                                                    <p>03 Aug 2022</p>
-                                                </div><!-- /.card__date -->
-                                            </div><!-- /.card__content -->
-                                        </div><!-- /.card__inner -->
-                                    </div><!-- /.card-recent-post -->
-                                </li>
-                            </ul>
-                        </div><!-- /.section__recent-posts-list -->
-                    </div><!-- /.section__aside -->
-                </div><!-- /.section__inner -->
-            </div><!-- /.shell -->
-        </section><!-- /.section-blog -->
-
-        <div class="outro">
-            <div class="shell outro__shell">
-                <div class="outro__items">
-                    <div class="outro__item">
-                        <img src="../media/images/trophy 1.svg" alt="">
-
-                        <div class="outro__content">
-                            <h3 class="outro__title">High quality</h3><!-- /.outro__title -->
-
-                            <p class="outro__subtitle">crafted from top materials</p><!-- /.outro__subtitle -->
-                        </div><!-- /.outro__content -->
-                    </div><!-- /.outro__item -->
-
-                    <div class="outro__item">
-                        <img src="../media/images/guarantee.svg" alt="">
-
-                        <div class="outro__content">
-                            <h3 class="outro__title">Warranty Protection</h3><!-- /.outro__title -->
-
-                            <p class="outro__subtitle">Over 2 years</p><!-- /.outro__subtitle -->
-                        </div><!-- /.outro__content -->
-                    </div><!-- /.outro__item -->
-
-                    <div class="outro__item">
-                        <img src="../media/images/shipping.svg" alt="">
-
-                        <div class="outro__content">
-                            <h3 class="outro__title">Free Shipping</h3><!-- /.outro__title -->
-
-                            <p class="outro__subtitle">Order over 150 $</p><!-- /.outro__subtitle -->
-                        </div><!-- /.outro__content -->
-                    </div><!-- /.outro__item -->
-
-                    <div class="outro__item">
-                        <img src="../media/images/customer-support.svg" alt="">
-
-                        <div class="outro__content">
-                            <h3 class="outro__title">24 / 7 Support</h3><!-- /.outro__title -->
-
-                            <p class="outro__subtitle">Dedicated support</p><!-- /.outro__subtitle -->
-                        </div><!-- /.outro__content -->
-                    </div><!-- /.outro__item -->
-                </div><!-- /.outro__items -->
-            </div><!-- /.shell -->
-        </div><!-- /.outro -->
-    </main><!-- /.main -->
-
-    <footer class="footer">
-        <div class="shell footer__shell">
-            <div class="footer__cols">
-                <div class="footer__col-1of3">
-                    <div class="footer__contacts">
-                        <div class="footer__contacts-head">
-                            <p>Funiro.</p>
-                        </div><!-- /.footer__contacts-head -->
-
-                        <address class="footer__address">
-                            <p>400 University Drive Suite 200 Coral </p>
-
-                            <p>Gables,</p>
-
-                            <p>FL 33134 USA</p>
-                        </address><!-- /.footer__address -->
-                    </div><!-- /.footer__contacts -->
-                </div><!-- /.footer__col-1of3 -->
-
-                <div class="footer__col-2of3">
-                    <div class="footer__inner-cols">
-                        <div class="footer__menues">
-                            <div class="footer__menu">
-                                <h3>Links</h3>
-
-                                <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Shop</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div><!-- /.footer__menu -->
-
-                            <div class="footer__menu">
-                                <h3>Help</h3>
-
-                                <ul>
-                                    <li><a href="#">Payment Options</a></li>
-                                    <li><a href="#">Returns</a></li>
-                                    <li><a href="#">Privacy Policies</a></li>
-                                </ul>
-                            </div><!-- /.footer__menu -->
-                        </div><!-- /.footer__menues -->
-
-                        <div class="footer__subscription">
-                            <h3>Newsletter</h3>
-
-                            <form action="#" class="footer__form">
-                                <input type="email" placeholder="Enter Your Email Address" required>
-
-                                <button type="submit" class="form__btn">Subscribe</button>
-                            </form><!-- /.footer__form -->
-                        </div><!-- /.footer__subscription -->
-                    </div><!-- /.footer__cols -->
-                </div><!-- /.footer__col-2of3 -->
-            </div><!-- /.footer__cols -->
-
-            <div class="footer__copyright">
-                <p>2023 funiro. All rights reserved.</p>
-            </div><!-- /.footer__copyright -->
-        </div><!-- /.shell footer__shell -->
-    </footer><!-- /.footer -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../js/main.js"></script>
+      </div><!-- /.hero__inner -->
+    </div><!-- /.hero-inner-pages -->
+
+    <section class="section-blog">
+      <div class="shell">
+        <div class="section__inner">
+          <div class="section__main">
+            <ul class="section__list">
+              <div class="section__list-item">
+                <div class="card-blog">
+                  <div class="card__media image-fit">
+                    <img src="../media/images/2x-card-blog-1.jpg" alt="">
+                  </div><!-- /.card__media image-fit -->
+
+                  <ul class="card__meta-list">
+                    <li class="card__meta-list-item">
+                      <div class="card__meta-list-item-ico">
+                        <img src="../media/images/user-ico.svg" alt="">
+                      </div><!-- /.card__meta-list-item-ico -->
+
+                      <div class="card__meta-list-item-text">
+                        <p>Admin</p>
+                      </div><!-- /.card__meta-list-item-text -->
+                    </li><!-- /.card__meta-list-item -->
+
+                    <li class="card__meta-list-item">
+                      <div class="card__meta-list-item-ico">
+                        <img src="../media/images/date-ico.svg" alt="">
+                      </div><!-- /.card__meta-list-item-ico -->
+
+                      <div class="card__meta-list-item-text">
+                        <p>14 Oct 2022</p>
+                      </div><!-- /.card__meta-list-item-text -->
+                    </li><!-- /.card__meta-list-item -->
+
+                    <li class="card__meta-list-item">
+                      <div class="card__meta-list-item-ico">
+                        <img src="../media/images/tag-ico.svg" alt="">
+                      </div><!-- /.card__meta-list-item-ico -->
+
+                      <div class="card__meta-list-item-text">
+                        <p>Wood</p>
+                      </div><!-- /.card__meta-list-item-text -->
+                    </li><!-- /.card__meta-list-item -->
+                  </ul><!-- /.card__meta-list -->
+
+                  <div class="card__text">
+                    <h3 class="card__header">
+                      Going all-in with millennial design
+                    </h3><!-- /.card__header -->
+
+                    <p class="card__entry">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae
+                      ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam
+                      ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero
+                      enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh
+                      cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper
+                      dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod
+                      elementum.
+                    </p>
+                  </div><!-- /.card__text -->
+
+                  <div class="card__actions">
+                    <a href="#" class="btn-text">Read more</a><!-- /.btn-text -->
+                  </div><!-- /.card__actions -->
+                </div><!-- /.card-blog -->
+              </div><!-- /.section__list-item -->
+
+              <div class="section__list-item">
+                <div class="card-blog">
+                  <div class="card__media image-fit">
+                    <img src="../media/images/2x-card-blog-2.jpg" alt="">
+                  </div><!-- /.card__media image-fit -->
+
+                  <ul class="card__meta-list">
+                    <li class="card__meta-list-item">
+                      <div class="card__meta-list-item-ico">
+                        <img src="../media/images/user-ico.svg" alt="">
+                      </div><!-- /.card__meta-list-item-ico -->
+
+                      <div class="card__meta-list-item-text">
+                        <p>Admin</p>
+                      </div><!-- /.card__meta-list-item-text -->
+                    </li><!-- /.card__meta-list-item -->
+
+                    <li class="card__meta-list-item">
+                      <div class="card__meta-list-item-ico">
+                        <img src="../media/images/date-ico.svg" alt="">
+                      </div><!-- /.card__meta-list-item-ico -->
+
+                      <div class="card__meta-list-item-text">
+                        <p>14 Oct 2022</p>
+                      </div><!-- /.card__meta-list-item-text -->
+                    </li><!-- /.card__meta-list-item -->
+
+                    <li class="card__meta-list-item">
+                      <div class="card__meta-list-item-ico">
+                        <img src="../media/images/tag-ico.svg" alt="">
+                      </div><!-- /.card__meta-list-item-ico -->
+
+                      <div class="card__meta-list-item-text">
+                        <p>Handmade</p>
+                      </div><!-- /.card__meta-list-item-text -->
+                    </li><!-- /.card__meta-list-item -->
+                  </ul><!-- /.card__meta-list -->
+
+                  <div class="card__text">
+                    <h3 class="card__header">
+                      Exploring new ways of decorating
+                    </h3><!-- /.card__header -->
+
+                    <p class="card__entry">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae
+                      ultricies leo integer malesuada nunc. In nulla posuere sollicitudin
+                      aliquam
+                      ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet.
+                      Libero
+                      enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat.
+                      Nibh
+                      cras pulvinar mattis nunc sed blandit libero. Pellentesque elit
+                      ullamcorper
+                      dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean
+                      euismod
+                      elementum.
+                    </p>
+                  </div><!-- /.card__text -->
+
+                  <div class="card__actions">
+                    <a href="#" class="btn-text">Read more</a><!-- /.btn-text -->
+                  </div><!-- /.card__actions -->
+                </div><!-- /.card-blog -->
+              </div><!-- /.section__list-item -->
+
+              <div class="section__list-item">
+                <div class="card-blog">
+                  <div class="card__media image-fit">
+                    <img src="../media/images/2x-card-blog-3.jpg" alt="">
+                  </div><!-- /.card__media image-fit -->
+
+                  <ul class="card__meta-list">
+                    <li class="card__meta-list-item">
+                      <div class="card__meta-list-item-ico">
+                        <img src="../media/images/user-ico.svg" alt="">
+                      </div><!-- /.card__meta-list-item-ico -->
+
+                      <div class="card__meta-list-item-text">
+                        <p>Admin</p>
+                      </div><!-- /.card__meta-list-item-text -->
+                    </li><!-- /.card__meta-list-item -->
+
+                    <li class="card__meta-list-item">
+                      <div class="card__meta-list-item-ico">
+                        <img src="../media/images/date-ico.svg" alt="">
+                      </div><!-- /.card__meta-list-item-ico -->
+
+                      <div class="card__meta-list-item-text">
+                        <p>14 Oct 2022</p>
+                      </div><!-- /.card__meta-list-item-text -->
+                    </li><!-- /.card__meta-list-item -->
+
+                    <li class="card__meta-list-item">
+                      <div class="card__meta-list-item-ico">
+                        <img src="../media/images/tag-ico.svg" alt="">
+                      </div><!-- /.card__meta-list-item-ico -->
+
+                      <div class="card__meta-list-item-text">
+                        <p>Wood</p>
+                      </div><!-- /.card__meta-list-item-text -->
+                    </li><!-- /.card__meta-list-item -->
+                  </ul><!-- /.card__meta-list -->
+
+                  <div class="card__text">
+                    <h3 class="card__header">
+                      Handmade pieces that took time to make
+                    </h3><!-- /.card__header -->
+
+                    <p class="card__entry">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae
+                      ultricies leo integer malesuada nunc. In nulla posuere sollicitudin
+                      aliquam
+                      ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet.
+                      Libero
+                      enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat.
+                      Nibh
+                      cras pulvinar mattis nunc sed blandit libero. Pellentesque elit
+                      ullamcorper
+                      dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean
+                      euismod
+                      elementum.
+                    </p>
+                  </div><!-- /.card__text -->
+
+                  <div class="card__actions">
+                    <a href="#" class="btn-text">Read more</a><!-- /.btn-text -->
+                  </div><!-- /.card__actions -->
+                </div><!-- /.card-blog -->
+              </div><!-- /.section__list-item -->
+            </ul><!-- /.section__list -->
+
+            <div class="section__pagination">
+              <div class="paging">
+                <div class="paging__prev disabled"><a href="#">Previous</a></div><!-- /.paging__prev -->
+
+                <ul class="paging__pages">
+                  <li class="paging__current-page"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                </ul><!-- /.paging__pages -->
+
+                <div class="paging__next"><a href="#">Next</a></div><!-- /.paging__next -->
+              </div><!-- /.paging -->
+            </div><!-- /.section__pagination -->
+          </div><!-- /.section__main -->
+
+          <div class="section__aside">
+            <div class="section__search">
+              <div class="form-search">
+                <form action="?">
+                  <input type="search">
+                  <button type="submit" class="form__btn">
+                    <img src="../media/images/search-ico.svg" alt="">
+                  </button>
+                </form>
+              </div><!-- /.form-search -->
+            </div><!-- /.section__search -->
+
+            <div class="section__categories-list">
+              <div class="list-categories">
+                <div class="list-categories__head">
+                  <p>Categories</p>
+                </div><!-- /.section__categories-head -->
+                
+                <ul class="list-categories__listing">
+                  <li><a href="#">Crafts <span>2</span></a></li>
+
+                  <li><a href="#">Design <span>8</span></a></li>
+
+                  <li><a href="#">Handmade <span>7</span></a></li>
+
+                  <li><a href="#">Interior <span>1</span></a></li>
+
+                  <li><a href="#">Wood <span>6</span></a></li>
+                </ul><!-- /.list-categories -->
+              </div><!-- /.list-categories -->
+            </div><!-- /.section__categories-list -->
+
+            <div class="section__recent-posts-list">
+              <div class="section__recent-posts-list__head">
+                <p>Recent Posts</p>
+              </div><!-- /.section__recent-posts-list__head -->
+              
+              <ul>
+                <li>
+                  <div class="card-recent-post">
+                    <a href="#"></a>
+
+                    <div class="card__inner">
+                      <div class="card__img image-fit">
+                        <img src="../media/images/2x_card-post-img-1.jpg" alt="">
+                      </div><!-- /.card__img image-fit -->
+
+                      <div class="card__content">
+                        <div class="card__title">
+                          <p>Going all-in with millennial design</p>
+                        </div><!-- /.card__title -->
+
+                        <div class="card__date">
+                          <p>03 Aug 2022</p>
+                        </div><!-- /.card__date -->
+                      </div><!-- /.card__content -->
+                    </div><!-- /.card__inner -->
+                  </div><!-- /.card-recent-post -->
+                </li>
+
+                <li>
+                  <div class="card-recent-post">
+                    <a href="#"></a>
+
+                    <div class="card__inner">
+                      <div class="card__img image-fit">
+                        <img src="../media/images/2x_card-post-img-2.jpg" alt="">
+                      </div><!-- /.card__img image-fit -->
+
+                      <div class="card__content">
+                        <div class="card__title">
+                          <p>Exploring new ways of decorating</p>
+                        </div><!-- /.card__title -->
+
+                        <div class="card__date">
+                          <p>03 Aug 2022</p>
+                        </div><!-- /.card__date -->
+                      </div><!-- /.card__content -->
+                    </div><!-- /.card__inner -->
+                  </div><!-- /.card-recent-post -->
+                </li>
+
+                <li>
+                  <div class="card-recent-post">
+                    <a href="#"></a>
+
+                    <div class="card__inner">
+                      <div class="card__img image-fit">
+                        <img src="../media/images/2x_card-post-img-3.jpg" alt="">
+                      </div><!-- /.card__img image-fit -->
+
+                      <div class="card__content">
+                        <div class="card__title">
+                          <p>Handmade pieces that took time to make</p>
+                        </div><!-- /.card__title -->
+
+                        <div class="card__date">
+                          <p>03 Aug 2022</p>
+                        </div><!-- /.card__date -->
+                      </div><!-- /.card__content -->
+                    </div><!-- /.card__inner -->
+                  </div><!-- /.card-recent-post -->
+                </li>
+
+                <li>
+                  <div class="card-recent-post">
+                    <a href="#"></a>
+
+                    <div class="card__inner">
+                      <div class="card__img image-fit">
+                        <img src="../media/images/2x_card-post-img-4.jpg" alt="">
+                      </div><!-- /.card__img image-fit -->
+
+                      <div class="card__content">
+                        <div class="card__title">
+                          <p>Modern home in Milan</p>
+                        </div><!-- /.card__title -->
+
+                        <div class="card__date">
+                          <p>03 Aug 2022</p>
+                        </div><!-- /.card__date -->
+                      </div><!-- /.card__content -->
+                    </div><!-- /.card__inner -->
+                  </div><!-- /.card-recent-post -->
+                </li>
+
+                <li>
+                  <div class="card-recent-post">
+                    <a href="#"></a>
+
+                    <div class="card__inner">
+                      <div class="card__img image-fit">
+                        <img src="../media/images/2x_card-post-img-5.jpg" alt="">
+                      </div><!-- /.card__img image-fit -->
+
+                      <div class="card__content">
+                        <div class="card__title">
+                          <p>Colorful office redesign</p>
+                        </div><!-- /.card__title -->
+
+                        <div class="card__date">
+                          <p>03 Aug 2022</p>
+                        </div><!-- /.card__date -->
+                      </div><!-- /.card__content -->
+                    </div><!-- /.card__inner -->
+                  </div><!-- /.card-recent-post -->
+                </li>
+              </ul>
+            </div><!-- /.section__recent-posts-list -->
+          </div><!-- /.section__aside -->
+        </div><!-- /.section__inner -->
+      </div><!-- /.shell -->
+    </section><!-- /.section-blog -->
+
+    <div class="outro">
+      <div class="shell outro__shell">
+        <div class="outro__items">
+          <div class="outro__item">
+            <img src="../media/images/trophy 1.svg" alt="">
+
+            <div class="outro__content">
+              <h3 class="outro__title">High quality</h3><!-- /.outro__title -->
+
+              <p class="outro__subtitle">crafted from top materials</p><!-- /.outro__subtitle -->
+            </div><!-- /.outro__content -->
+          </div><!-- /.outro__item -->
+
+          <div class="outro__item">
+            <img src="../media/images/guarantee.svg" alt="">
+
+            <div class="outro__content">
+              <h3 class="outro__title">Warranty Protection</h3><!-- /.outro__title -->
+
+              <p class="outro__subtitle">Over 2 years</p><!-- /.outro__subtitle -->
+            </div><!-- /.outro__content -->
+          </div><!-- /.outro__item -->
+
+          <div class="outro__item">
+            <img src="../media/images/shipping.svg" alt="">
+
+            <div class="outro__content">
+              <h3 class="outro__title">Free Shipping</h3><!-- /.outro__title -->
+
+              <p class="outro__subtitle">Order over 150 $</p><!-- /.outro__subtitle -->
+            </div><!-- /.outro__content -->
+          </div><!-- /.outro__item -->
+
+          <div class="outro__item">
+            <img src="../media/images/customer-support.svg" alt="">
+
+            <div class="outro__content">
+              <h3 class="outro__title">24 / 7 Support</h3><!-- /.outro__title -->
+
+              <p class="outro__subtitle">Dedicated support</p><!-- /.outro__subtitle -->
+            </div><!-- /.outro__content -->
+          </div><!-- /.outro__item -->
+        </div><!-- /.outro__items -->
+      </div><!-- /.shell -->
+    </div><!-- /.outro -->
+  </main><!-- /.main -->
+
+  <footer class="footer">
+    <div class="shell footer__shell">
+      <div class="footer__cols">
+        <div class="footer__col-1of3">
+          <div class="footer__contacts">
+            <div class="footer__contacts-head">
+              <p>Funiro.</p>
+            </div><!-- /.footer__contacts-head -->
+
+            <address class="footer__address">
+              <p>400 University Drive Suite 200 Coral </p>
+
+              <p>Gables,</p>
+
+              <p>FL 33134 USA</p>
+            </address><!-- /.footer__address -->
+          </div><!-- /.footer__contacts -->
+        </div><!-- /.footer__col-1of3 -->
+
+        <div class="footer__col-2of3">
+          <div class="footer__inner-cols">
+            <div class="footer__menues">
+              <div class="footer__menu">
+                <h3>Links</h3>
+
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div><!-- /.footer__menu -->
+
+              <div class="footer__menu">
+                <h3>Help</h3>
+
+                <ul>
+                  <li><a href="#">Payment Options</a></li>
+                  <li><a href="#">Returns</a></li>
+                  <li><a href="#">Privacy Policies</a></li>
+                </ul>
+              </div><!-- /.footer__menu -->
+            </div><!-- /.footer__menues -->
+
+            <div class="footer__subscription">
+              <h3>Newsletter</h3>
+
+              <form action="#" class="footer__form">
+                <input type="email" placeholder="Enter Your Email Address" required>
+
+                <button type="submit" class="form__btn">Subscribe</button>
+              </form><!-- /.footer__form -->
+            </div><!-- /.footer__subscription -->
+          </div><!-- /.footer__cols -->
+        </div><!-- /.footer__col-2of3 -->
+      </div><!-- /.footer__cols -->
+
+      <div class="footer__copyright">
+        <p>2023 funiro. All rights reserved.</p>
+      </div><!-- /.footer__copyright -->
+    </div><!-- /.shell footer__shell -->
+  </footer><!-- /.footer -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>
